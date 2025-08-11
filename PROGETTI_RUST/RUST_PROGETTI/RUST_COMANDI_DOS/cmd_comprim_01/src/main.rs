@@ -8,8 +8,10 @@ mod file_time;
 
 
 //COSTANTI PATH ARRIVO E PARTENZA
-const FILE_PARTENZA: &str = "C:\\CASA\\PROVA_RUST\\rust_comprimi_mese\\resources\\paths_Partenza.txt";
-const FILE_ARRIVO: &str = "C:\\CASA\\PROVA_RUST\\rust_comprimi_mese\\resources\\path_Arrivo.txt";
+const FILE_PARTENZA: &str = "c:\\Casa\\LINGUAGGI\\RUST\\PROGETTI_RUST\\RUST_PROGETTI\\RUST_COMANDI_DOS\\cmd_comprim_01\\resources\\paths_Partenza.txt";
+
+
+const FILE_ARRIVO: &str = "c:\\Casa\\LINGUAGGI\\RUST\\PROGETTI_RUST\\RUST_PROGETTI\\RUST_COMANDI_DOS\\cmd_comprim_01\\resources\\path_Arrivo.txt";
 
 /// Simple app for backup files and folders recursively from a file with a list of paths
 #[derive(Parser, Debug)]
@@ -111,7 +113,8 @@ impl ComprimiFile {
     /// C:\CASA\Rar.exe a -r -u ZZ_SALVATAGGI_ARCHIVI_70_GENERICI *.* -v10m
     fn comprimi_rar(par_nome_zip: &str, par_nome_file_archivio: &str) {
         //istanzio il comando rar
-        let mut command = Command::new("c:\\CASA\\WinRAR\\Rar.exe");
+
+        let mut command = Command::new("C:\\Program Files\\7-Zip\\7z.exe");
 
         //predispongo i successivi parametri di rar in un vettore
         let argomenti = vec![
@@ -124,6 +127,7 @@ impl ComprimiFile {
         ];
         // prende l'istanza del comando a cui aggiunge gli argomenti rar
         let command = command.args(&argomenti);
+
 
         let mut s: String = String::new();
         for arg in argomenti {

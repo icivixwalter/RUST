@@ -15,44 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Project_RUST_TONY_CHAN.sublime-project",
-			"settings":
-			{
-				"buffer_size": 3054,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-				[
-					3,
-					1,
-					"paste",
-					null,
-					"AQAAAMYIAAAAAAAA/ggAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADGCAAAAAAAAMYIAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "/"
-					},
-					"HgAAAP0IAAAAAAAA/ggAAAAAAAABAAAAXOoIAAAAAAAA6wgAAAAAAAABAAAAXNwIAAAAAAAA3QgAAAAAAAABAAAAXNcIAAAAAAAA2AgAAAAAAAABAAAAXM0IAAAAAAAAzggAAAAAAAABAAAAXMgIAAAAAAAAyQgAAAAAAAABAAAAXOEDAAAAAAAA4gMAAAAAAAABAAAAXNEDAAAAAAAA0gMAAAAAAAABAAAAXKIDAAAAAAAAowMAAAAAAAABAAAAXKEDAAAAAAAAogMAAAAAAAABAAAAXJEDAAAAAAAAkgMAAAAAAAABAAAAXJADAAAAAAAAkQMAAAAAAAABAAAAXHcDAAAAAAAAeAMAAAAAAAABAAAAXHYDAAAAAAAAdwMAAAAAAAABAAAAXGgDAAAAAAAAaQMAAAAAAAABAAAAXGcDAAAAAAAAaAMAAAAAAAABAAAAXGEDAAAAAAAAYgMAAAAAAAABAAAAXGADAAAAAAAAYQMAAAAAAAABAAAAXFYDAAAAAAAAVwMAAAAAAAABAAAAXFUDAAAAAAAAVgMAAAAAAAABAAAAXE0DAAAAAAAATgMAAAAAAAABAAAAXEwDAAAAAAAATQMAAAAAAAABAAAAXEcDAAAAAAAASAMAAAAAAAABAAAAXEYDAAAAAAAARwMAAAAAAAABAAAAXA4CAAAAAAAADwIAAAAAAAABAAAAXAACAAAAAAAAAQIAAAAAAAABAAAAXPoBAAAAAAAA+wEAAAAAAAABAAAAXPABAAAAAAAA8QEAAAAAAAABAAAAXOgBAAAAAAAA6QEAAAAAAAABAAAAXOMBAAAAAAAA5AEAAAAAAAABAAAAXA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAB4AAADjAQAAAAAAAOQBAAAAAAAAAAAAAAAA8L/oAQAAAAAAAOkBAAAAAAAAAAAAAAAA8L/wAQAAAAAAAPEBAAAAAAAAAAAAAAAA8L/6AQAAAAAAAPsBAAAAAAAAAAAAAAAA8L8AAgAAAAAAAAECAAAAAAAAAAAAAAAA8L8OAgAAAAAAAA8CAAAAAAAAAAAAAAAA8L9GAwAAAAAAAEcDAAAAAAAAAAAAAAAA8L9HAwAAAAAAAEgDAAAAAAAAAAAAAAAA8L9MAwAAAAAAAE0DAAAAAAAAAAAAAAAA8L9NAwAAAAAAAE4DAAAAAAAAAAAAAAAA8L9VAwAAAAAAAFYDAAAAAAAAAAAAAAAA8L9WAwAAAAAAAFcDAAAAAAAAAAAAAAAA8L9gAwAAAAAAAGEDAAAAAAAAAAAAAAAA8L9hAwAAAAAAAGIDAAAAAAAAAAAAAAAA8L9nAwAAAAAAAGgDAAAAAAAAAAAAAAAA8L9oAwAAAAAAAGkDAAAAAAAAAAAAAAAA8L92AwAAAAAAAHcDAAAAAAAAAAAAAAAA8L93AwAAAAAAAHgDAAAAAAAAAAAAAAAA8L+QAwAAAAAAAJEDAAAAAAAAAAAAAAAA8L+RAwAAAAAAAJIDAAAAAAAAAAAAAAAA8L+hAwAAAAAAAKIDAAAAAAAAAAAAAAAA8L+iAwAAAAAAAKMDAAAAAAAAAAAAAAAA8L/RAwAAAAAAANIDAAAAAAAAAAAAAAAA8L/hAwAAAAAAAOIDAAAAAAAAAAAAAAAA8L/ICAAAAAAAAMkIAAAAAAAAAAAAAAAA8L/NCAAAAAAAAM4IAAAAAAAAAAAAAAAA8L/XCAAAAAAAANgIAAAAAAAAAAAAAAAA8L/cCAAAAAAAAN0IAAAAAAAAAAAAAAAA8L/qCAAAAAAAAOsIAAAAAAAAAAAAAAAA8L/9CAAAAAAAAP4IAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/.gitignore",
-			"settings":
-			{
-				"buffer_size": 6,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/User/PandocToWord.sublime-build",
 	"build_system_choices":
@@ -199,6 +161,12 @@
 	],
 	"file_history":
 	[
+		"/C/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/RIASSUNTO_TONY_CHAN.md",
+		"/C/CASA/LINGUAGGI/SUBLIMETEXT/README_COMANDI_VARI.md",
+		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/open_pdf_bat.py",
+		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/Main.sublime-menu",
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/RIASSUNTO_TONY_CHAN.md",
+		"/C/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/Project_RUST_TONY_CHAN.sublime-project",
 		"/c/Casa/LINGUAGGI/RUST/RUST_TUTORIAL/RUST_TUTORIAL_TONY_CHAN/RIASSUNTO_TONY_CHAN.md",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/Build_CMD_APRI_README_COMANDI_VARI.BAT.sublime-build",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/PandocToWord.sublime-build",
@@ -286,7 +254,7 @@
 	],
 	"find":
 	{
-		"height": 40.8
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -408,337 +376,12 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Project_RUST_TONY_CHAN.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3054,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								484,
-								484
-							],
-							[
-								489,
-								489
-							],
-							[
-								497,
-								497
-							],
-							[
-								507,
-								507
-							],
-							[
-								513,
-								513
-							],
-							[
-								527,
-								527
-							],
-							[
-								839,
-								839
-							],
-							[
-								840,
-								840
-							],
-							[
-								845,
-								845
-							],
-							[
-								846,
-								846
-							],
-							[
-								854,
-								854
-							],
-							[
-								855,
-								855
-							],
-							[
-								865,
-								865
-							],
-							[
-								866,
-								866
-							],
-							[
-								872,
-								872
-							],
-							[
-								873,
-								873
-							],
-							[
-								887,
-								887
-							],
-							[
-								888,
-								888
-							],
-							[
-								913,
-								913
-							],
-							[
-								914,
-								914
-							],
-							[
-								930,
-								930
-							],
-							[
-								931,
-								931
-							],
-							[
-								978,
-								978
-							],
-							[
-								994,
-								994
-							],
-							[
-								2249,
-								2249
-							],
-							[
-								2254,
-								2254
-							],
-							[
-								2264,
-								2264
-							],
-							[
-								2269,
-								2269
-							],
-							[
-								2283,
-								2283
-							],
-							[
-								2302,
-								2302
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"rainbow_checked": true,
-							"syntax": "Packages/JSON/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 854.4,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/.gitignore",
-					"selected": true,
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"rainbow_checked": true,
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 34.4
+		"height": 28.0
 	},
 	"input":
 	{
@@ -792,7 +435,7 @@
 	"project": "Project_RUST_TONY_CHAN.sublime-project",
 	"replace":
 	{
-		"height": 65.6
+		"height": 52.8
 	},
 	"save_all_on_build": false,
 	"select_file":

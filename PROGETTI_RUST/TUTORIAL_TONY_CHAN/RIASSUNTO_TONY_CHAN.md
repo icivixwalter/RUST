@@ -1,20 +1,8 @@
 # RIASSUNTO_TONY_CHAN.md
          @RAUST@TUTORIAL@TONY@CHAN
-## GUIDA MARK DOWN
- ### Note
-         si trova qui: https://learnxinyminutes.com/it/markdown/
-   
-               esempio i titoli:
-         
-                        # Questo è un <h1>
-                        ## Questo è un <h2>
-                        ### Questo è un <h3>
-                        #### Questo è un <h4>
-                        ##### Questo è un <h5>
-                        ###### Questo è un <h6>1
-         
+       
  
- ### Guida completa per sviluppatori e principianti @giacomo
+ ## GUIDA COMPLETA PER SVILUPPATORI E PRINCIPIANTI @GIACOMO
    Libro cha ha acquistato giacomo.
    
  ### Introduzione
@@ -1446,3 +1434,5 @@
                | write!          | Scrive formattato su un writer (es. file, buffer)      | write!(f, "ciao {}", nome)?;              |
                | writeln!        | Come write! ma con newline finale                      | writeln!(f, "ciao {}", nome)?;            |
                +-----------------+---------------------------------------------------------+-------------------------------------------+
+ 
+## 2
