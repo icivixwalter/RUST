@@ -2,6 +2,7 @@
 TUTTI I PROGETTI RUST
    Note 
       i progetti inseriti sono:
+            https://github.com/icivixwalter/RUST/tree/calcolo/PROGETTI_RUST
 
       TUTORIAL_RUST_WEB
          Note
