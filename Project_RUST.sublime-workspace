@@ -1,0 +1,976 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inv",
+				"inviestimenti"
+			],
+			[
+				"perid",
+				"PERIODO"
+			],
+			[
+				"m",
+				"MACD"
+			],
+			[
+				"w",
+				"white3"
+			],
+			[
+				"whi",
+				"white2"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Project_RUST.sublime-project",
+			"settings":
+			{
+				"buffer_size": 71,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAACEAAAAAAAAAOAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"BAAAADcAAAAAAAAAOAAAAAAAAAABAAAAXDIAAAAAAAAAMwAAAAAAAAABAAAAXCgAAAAAAAAAKQAAAAAAAAABAAAAXCMAAAAAAAAAJAAAAAAAAAABAAAAXA",
+					"AQAAAAAAAAAEAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/KAAAAAAAAAApAAAAAAAAAAAAAAAAAPC/MgAAAAAAAAAzAAAAAAAAAAAAAAAAAPC/NwAAAAAAAAA4AAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "README.MD\n\nGIT\n   NUOVA REPOSITORY\n      …or create a new repository on the command line\n      echo \"# RUST\" >> README.md\n      git init\n      git add README.md\n      git commit -m \"first commit\"\n      git branch -M main\n      git remote add origin https://github.com/icivixwalter/RUST.git\n      git push -u origin main\n\n\n      …or push an existing repository from the command line\n        \n         git remote add origin https://github.com/icivixwalter/RUST.git\n         git branch -M main\n         git push -u origin main",
+			"file": "README.MD",
+			"file_size": 535,
+			"file_write_time": 133993794417485304,
+			"settings":
+			{
+				"buffer_size": 523,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "README.MD"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "rwe"
+					},
+					"AwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					3,
+					"left_delete",
+					null,
+					"AwAAAAIAAAAAAAAAAgAAAAAAAAABAAAAZQEAAAAAAAAAAQAAAAAAAAABAAAAdwAAAAAAAAAAAAAAAAAAAAABAAAAcg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "README."
+					},
+					"BwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAAYAAAAAAAAABwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "MD"
+					},
+					"AgAAAAcAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAJAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABwAAAAAAAAAHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAAAsAAAAAAAAADAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAsAAAAAAAAACwAAAAAAAAABAAAAZw",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "GIT"
+					},
+					"AwAAAAsAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAA4AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAA4AAAAAAAAADwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADgAAAAAAAAAOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"reindent",
+					null,
+					"AQAAAA8AAAAAAAAAEgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADwAAAAAAAAAPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "NUOVA"
+					},
+					"BQAAABIAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABUAAAAAAAAAAAAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEgAAAAAAAAASAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " REPOSI"
+					},
+					"BwAAABcAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAABoAAAAAAAAAAAAAABoAAAAAAAAAGwAAAAAAAAAAAAAAGwAAAAAAAAAcAAAAAAAAAAAAAAAcAAAAAAAAAB0AAAAAAAAAAAAAAB0AAAAAAAAAHgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "TER"
+					},
+					"AwAAAB4AAAAAAAAAHwAAAAAAAAAAAAAAHwAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					2,
+					"left_delete",
+					null,
+					"AgAAACAAAAAAAAAAIAAAAAAAAAABAAAAUh8AAAAAAAAAHwAAAAAAAAABAAAARQ",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "ORY"
+					},
+					"AwAAAB8AAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAhAAAAAAAAAAAAAAAhAAAAAAAAACIAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHwAAAAAAAAAfAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "\n\t"
+					},
+					"AgAAACIAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAApAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste",
+					null,
+					"AQAAACkAAAAAAAAAMQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQAAAAAAAAApAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAADEAAAAAAAAAOAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMQAAAAAAAAAxAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"paste",
+					null,
+					"AQAAADgAAAAAAAAAXgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOAAAAAAAAAA4AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "\t\t"
+					},
+					"AgAAAEIAAAAAAAAARQAAAAAAAAAAAAAARQAAAAAAAABIAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAQgAAAAAAAABCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"paste",
+					null,
+					"AQAAACkAAAAAAAAAGwEAAAAAAAA7AAAAZ2l0IGluaXQKICAgICAgZ2l0IGFkZCAuCiAgICAgIGdpdCBjb21taXQgLW0gIlByaW1vIGNvbW1pdCI",
+					"AQAAAAAAAAABAAAAKQAAAAAAAABkAAAAAAAAAAAAAAAAgEpA"
+				],
+				[
+					29,
+					2,
+					"indent",
+					null,
+					"DgAAAFkAAAAAAAAAXAAAAAAAAAAAAAAAdwAAAAAAAAB6AAAAAAAAAAAAAACDAAAAAAAAAIYAAAAAAAAAAAAAAJgAAAAAAAAAmwAAAAAAAAAAAAAAuAAAAAAAAAC7AAAAAAAAAAAAAADRAAAAAAAAANQAAAAAAAAAAAAAABMBAAAAAAAAFgEAAAAAAAAAAAAAWQAAAAAAAABcAAAAAAAAAAAAAAB6AAAAAAAAAH0AAAAAAAAAAAAAAIkAAAAAAAAAjAAAAAAAAAAAAAAAoQAAAAAAAACkAAAAAAAAAAAAAADEAAAAAAAAAMcAAAAAAAAAAAAAAOAAAAAAAAAA4wAAAAAAAAAAAAAAJQEAAAAAAAAoAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWQAAAAAAAAAbAQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"BQAAAEUBAAAAAAAATAEAAAAAAAAAAAAATAEAAAAAAABTAQAAAAAAAAAAAABGAQAAAAAAAEYBAAAAAAAABgAAACAgICAgIE0BAAAAAAAAVAEAAAAAAAAAAAAARwEAAAAAAABHAQAAAAAAAAYAAAAgICAgICA",
+					"AQAAAAAAAAABAAAARQEAAAAAAABFAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"paste",
+					null,
+					"AQAAAE4BAAAAAAAA8wEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATgEAAAAAAABOAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					3,
+					"indent",
+					null,
+					"CQAAAIQBAAAAAAAAhwEAAAAAAAAAAAAAxgEAAAAAAADJAQAAAAAAAAAAAADfAQAAAAAAAOIBAAAAAAAAAAAAAIQBAAAAAAAAhwEAAAAAAAAAAAAAyQEAAAAAAADMAQAAAAAAAAAAAADlAQAAAAAAAOgBAAAAAAAAAAAAAIQBAAAAAAAAhwEAAAAAAAAAAAAAzAEAAAAAAADPAQAAAAAAAAAAAADrAQAAAAAAAO4BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAEAAAAAAADzAQAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					42,
+					1,
+					"insert",
+					{
+						"characters": "M"
+					},
+					"BAAAAAcCAAAAAAAACAIAAAAAAAAHAAAAY2FsY29sb+MBAAAAAAAA5AEAAAAAAAAHAAAAY2FsY29sbz4BAAAAAAAAPwEAAAAAAAAHAAAAY2FsY29sb9gAAAAAAAAA2QAAAAAAAAAHAAAAY2FsY29sbw",
+					"AQAAAAAAAAAEAAAA2AAAAAAAAADfAAAAAAAAAAAAAAAAAPC/PgEAAAAAAABFAQAAAAAAAAAAAAAAAPC/4wEAAAAAAADqAQAAAAAAAAAAAAAAAPC/BwIAAAAAAAAOAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					43,
+					1,
+					"left_delete",
+					null,
+					"BAAAAPUBAAAAAAAA9QEAAAAAAAABAAAATdcBAAAAAAAA1wEAAAAAAAABAAAATTgBAAAAAAAAOAEAAAAAAAABAAAATdgAAAAAAAAA2AAAAAAAAAABAAAATQ",
+					"AQAAAAAAAAAEAAAA2QAAAAAAAADZAAAAAAAAAAAAAAAAAPC/OQEAAAAAAAA5AQAAAAAAAAAAAAAAAPC/2AEAAAAAAADYAQAAAAAAAAAAAAAAAPC/9gEAAAAAAAD2AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": "mair"
+					},
+					"EAAAAPIBAAAAAAAA8wEAAAAAAAAAAAAA1QEAAAAAAADWAQAAAAAAAAAAAAA3AQAAAAAAADgBAAAAAAAAAAAAANgAAAAAAAAA2QAAAAAAAAAAAAAA9gEAAAAAAAD3AQAAAAAAAAAAAADYAQAAAAAAANkBAAAAAAAAAAAAADkBAAAAAAAAOgEAAAAAAAAAAAAA2QAAAAAAAADaAAAAAAAAAAAAAAD6AQAAAAAAAPsBAAAAAAAAAAAAANsBAAAAAAAA3AEAAAAAAAAAAAAAOwEAAAAAAAA8AQAAAAAAAAAAAADaAAAAAAAAANsAAAAAAAAAAAAAAP4BAAAAAAAA/wEAAAAAAAAAAAAA3gEAAAAAAADfAQAAAAAAAAAAAAA9AQAAAAAAAD4BAAAAAAAAAAAAANsAAAAAAAAA3AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAAEAAAA2AAAAAAAAADYAAAAAAAAAAAAAAAAAPC/NwEAAAAAAAA3AQAAAAAAAAAAAAAAAPC/1QEAAAAAAADVAQAAAAAAAAAAAAAAAPC/8gEAAAAAAADyAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					45,
+					1,
+					"left_delete",
+					null,
+					"BAAAAAECAAAAAAAAAQIAAAAAAAABAAAAcuABAAAAAAAA4AEAAAAAAAABAAAAcj4BAAAAAAAAPgEAAAAAAAABAAAActsAAAAAAAAA2wAAAAAAAAABAAAAcg",
+					"AQAAAAAAAAAEAAAA3AAAAAAAAADcAAAAAAAAAAAAAAAAAPC/PwEAAAAAAAA/AQAAAAAAAAAAAAAAAPC/4QEAAAAAAADhAQAAAAAAAAAAAAAAAPC/AgIAAAAAAAACAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					1,
+					"insert",
+					{
+						"characters": "n"
+					},
+					"BAAAAP4BAAAAAAAA/wEAAAAAAAAAAAAA3gEAAAAAAADfAQAAAAAAAAAAAAA9AQAAAAAAAD4BAAAAAAAAAAAAANsAAAAAAAAA3AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAAEAAAA2wAAAAAAAADbAAAAAAAAAAAAAAAAAPC/PQEAAAAAAAA9AQAAAAAAAAAAAAAAAPC/3gEAAAAAAADeAQAAAAAAAAAAAAAAAPC//gEAAAAAAAD+AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"swap_line_down",
+					null,
+					"AgAAAKEAAAAAAAAAsAAAAAAAAAAAAAAAegAAAAAAAAB6AAAAAAAAAA8AAAAgICAgICBnaXQgaW5pdAo",
+					"AQAAAAAAAAABAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"swap_line_up",
+					null,
+					"AgAAAJIAAAAAAAAAkgAAAAAAAAAPAAAAICAgICAgZ2l0IGluaXQKegAAAAAAAACJAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmAAAAAAAAACYAAAAAAAAAAAAAAAAgEpA"
+				],
+				[
+					63,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAIYBAAAAAAAAjwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhgEAAAAAAACGAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"term",
+				"Terminus: List Shells"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"ope",
+				"Terminal: Open in project folder"
+			],
+			[
+				"oe",
+				"Terminal: Open"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: INS",
+				"Package Control: Install Package"
+			],
+			[
+				"PA",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"PackageResourceViewer: View Package Resource",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"",
+				"Build: New Build System"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 231.0,
+		"history":
+		[
+			"START START \"apro la form\" SUBLIMETEX.EXE \"C:\\GESTIONI\\GESTIONE_LLPP\\25_GESTIONE_LLPP\\LLPP_ARCHIVI_MDB\\CIVILIA_GESTIONE\\CIVILIA_TEXT_ANALISI\\CIVILIA_ANALISI_SUBLIME_TEXT\\FORM\\CIVILIA_FrmTb01_01_ATTI_FORMALI_TMP_DaFile_xls_TMP.MD\"\n",
+			"START \"apro la form\" SUBLIMETEX.EXE \"C:\\GESTIONI\\GESTIONE_LLPP\\25_GESTIONE_LLPP\\LLPP_ARCHIVI_MDB\\CIVILIA_GESTIONE\\CIVILIA_TEXT_ANALISI\\CIVILIA_ANALISI_SUBLIME_TEXT\\FORM\\CIVILIA_FrmTb01_01_ATTI_FORMALI_TMP_DaFile_xls_TMP.MD\"\n"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/c/CASA/LINGUAGGI/RUST"
+	],
+	"file_history":
+	[
+		"/C/CASA/LINGUAGGI/RUST/RUST_PROGETTI/explorer/Project_Explorer.sublime-project",
+		"/c/CASA/LINGUAGGI/RUST/RUST_PROGETTI/explorer/src/main.rs",
+		"/c/CASA/LINGUAGGI/RUST/RUST_PROGETTI/explorer/resources/path_Partenza.txt",
+		"/C/CASA/GE_MARINO/GE_CASA/BANCA/Notiziario/NotiziarioEconominco/Notizie_Economiche.md",
+		"/C/CASA/GE_MARINO/GE_CASA/BANCA/Notiziario/AnalisiTecnica/FinecoWebinar.md",
+		"/C/CASA/GE_MARINO/GE_CASA/BANCA/Notiziario/PUSH.BAT",
+		"/C/CASA/GE_MARINO/GE_CASA/BANCA/Notiziario/git_STATUS+ADD+COMMIT+PUSH.BAT",
+		"/C/Users/walter.rossi/AppData/Local/Temp/7zO0AC0B4AB/readme.md",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/IMPEGNI/OBJECT/README_IMPEGNI.MD",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CUP_CIG_PROGETTI/CUP/ANALISI_CUP.MD",
+		"/C/CASA/GE_MARINO/BANCA/Notiziario/git_STATUS+ADD+COMMIT+PUSH.BAT",
+		"/C/Users/walter.rossi/AppData/Local/Temp/7zO48C00172/01-04-23_30-04-23_XCC_TUTTI_Excelrssvtr65t28l182n0027834642.txt",
+		"/C/Users/walter.rossi/AppData/Local/Temp/7zO4312A79F/01-04-23_01-04-23_XCE_TUTTI_STDrssvtr65t28l182n0027834642.txt",
+		"/C/CASA/PRES3000_07/AUTOMOBILI/FORD_FOCUS_DM_126CH/MEMO_7_2021.MD",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/Terminal/Terminal.sublime-settings",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/CIVILIA_ANALISI_SUBLIME_TEXT/FORM/CIVILIA_FrmTb01_01_ATTI_FORMALI_TMP_DaFile_xls_TMP.MD",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/User/Terminal.sublime-settings",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/User/Terminal (Windows).sublime-settings",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/CIVILIA_ANALISI_SUBLIME_TEXT/FORM/CIVILIA_QryTb01_01_ATTI_FORMALI_DaFile_xls_TMP.MD",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/Terminal/readme.md",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/Terminality/README.md",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/Terminality/Terminality.sublime-settings",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/User/TerminalinPackages/Default.sublime-keymap",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/PackageResourceViewer/README.md",
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Installed Packages/Terminal In Packages.sublime-package",
+		"/C/CASA/LINGUAGGI/DOS/DOS_PROGETTI/RELAZIONE_2021_2022.MD",
+		"/C/CASA/LTT/ANALISI/SublimeText_Analisi/LTT_ANALISI.MD",
+		"/C/CASA/LINGUAGGI/DOS/DOS_PROGETTI/DOS_PROGETTI.MD",
+		"/C/CASA/LINGUAGGI/CPP/CPP.MD",
+		"/C/Program Files/WinRAR/Licenza.Txt",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP./NUMERI_TELEFONICI_Dipendenti in Servizio.md",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/NUMERI_TELEFONICI_Dipendenti in Servizio.md",
+		"/C/CASA/LINGUAGGI/ACCESS/ACCESS_PROGETTI_MDB/GUIDA_DI_RIFERIMENTO_OGGETTI_ACCESS.MD",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/NUMERI_TELEFONICI_Dipendenti in Servizio.sublime-project",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/NUMERI_TELEFONICI_Dipendenti in Servizio.sublime-workspace",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/NUMERI_TELEFONICI_Dipendenti in Servizio.txt",
+		"/C/CASA/LINGUAGGI/ZIP/RAR/RAR_MANUALE_ITALIANO.TXT",
+		"/C/TMP/TMP_oggi/MEMO_7_2021.MD",
+		"/C/TMP/TMP_oggi/RAR_MANUALE_ITALIANO.TXT",
+		"/C/TMP/TMP_oggi/DA_SISTEMARE/GE_OGGETTI_DB_MDB_(StudioFiltroForEach).mdb",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/MENU_GESTIONE/MENU_GESTIONE_SUBLIME_TEXT_ANALISI/PROJECT_MENU_GESTIONE_SublimeText_Project.sublime-project",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/MENU_GESTIONE/MENU_GESTIONE_SUBLIME_TEXT_ANALISI/MENU_GESTIONE_SublimeText.txt",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/MENU_GESTIONE/MENU_GESTIONE_SUBLIME_TEXT_ANALISI/MENU_GESTIONE_SublimeText_Project.sublime-workspace",
+		"/C/TMP/TMP_oggi/DA_PROTOCOLLARE/MODELLI_AVVOCATURA_RISPOSTE/GIZA/MEMO_7_2021.txt",
+		"/C/CASA/CDM/MEMO_7_2021.txt",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_12_GRUPPO_ATTO.MD",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_11_GRUPPO_ANNO.MD",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/TABELLE/CIVILIA_Tb01_ATTI.MD",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_00_GE_ATTI.MD",
+		"/C/TMP/TMP_oggi/CONDOMINIO_QUADRINI/CONDOMINIO_QUADRINI_ATTI/Condominio_QUADRINI_ATTI_NOCE",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/PROGETTO_SUBLIME_TEXT/CIVILIA_SUBLIME_TEXT_ANALISI.sublime-project",
+		"/C/TMP/TMP_oggi/DA_SISTEMARE/COPIE_DISCARICA_LA_PROVINCIA",
+		"/C/TMP/TMP_oggi/DA_PUBBLICARE/LPDD_200_2021_DET_1409_2021/DET_1409_2021_TEXT.txt",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/PRES3000_GESTIONE/ARCHIVI_PRES3000/PRES3000_Tb02_ElencoGiornaliere/ANALISI_SUBLIME_TXT/PRES3000_Tb02_ElencoGiornaliere.txt",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/MIRABELLA",
+		"/C/TMP/TMP_oggi/INPS/RELAZIONE.txt",
+		"/C/TMP/TMP_oggi/DA_PUBBLICARE/LPDD_200_2021_DET_1409_2021/DET_XXX_2022_TEXT.txt",
+		"/Y/LAVORI_PUBBLICI_FINO_AL_30_09_2019/Valter/OPERE_PUBBLICHE/85_EX_DISCARICA_LE_LAME/40_EXDISCARICA_APQ8/FASCICOLO_03/03.00_ELENCO_EX_DISCARICA_COPIA_RENDICONTAZIONE_A3_FASCICOLO_03.txt",
+		"/Y/LAVORI_PUBBLICI_FINO_AL_30_09_2019/Valter/OPERE_PUBBLICHE/85_EX_DISCARICA_LE_LAME/40_EXDISCARICA_APQ8/FASCICOLO_02/02.00_ELENCO_EX_DISCARICA_COPIA_RENDICONTAZIONE_A3_FASCICOLO_02.txt",
+		"/Y/LAVORI_PUBBLICI_FINO_AL_30_09_2019/Valter/OPERE_PUBBLICHE/85_EX_DISCARICA_LE_LAME/40_EXDISCARICA_APQ8/FASCICOLO_01/01.00_ELENCO_EX_DISCARICA_COPIA_RENDICONTAZIONE_A3_FASCICOLO_01.txt",
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/PRES3000_GESTIONE/ARCHIVI_PRES3000/PRES3000_Tb02_ElencoGiornaliere/ANALISI_SUBLIME_TXT/WORKSPACE_Giornaliere.sublime-workspace",
+		"/C/TMP/TMP_oggi/DA_SCANSIONARE_EX_DICARICA_REGIONE/FASCICOLO_03/03.00_ELENCO_EX_DISCARICA_COPIA_RENDICONTAZIONE_A3_FASCICOLO_03.txt",
+		"/C/TMP/TMP_oggi/DA_SCANSIONARE_EX_DICARICA_REGIONE/FASCICOLO_03/03.00_ELENCO_EX_DISCARICA_APRI_TUTTO.bat",
+		"/C/TMP/TMP_oggi/DA_SISTEMARE/ARCH_NOCE_FIRME_CANCELLATE/ricerca_3.txt"
+	],
+	"find":
+	{
+		"height": 40.8
+	},
+	"find_in_files":
+	{
+		"height": 107.2,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"calcolo",
+			"\\",
+			"inviestimenti",
+			"c:\\CASA\\GE_MARINO\\BANCA\\Notiziario\\",
+			"@STARLINK",
+			"algorittimi",
+			"BANCA",
+			"@BOLLETTE",
+			"git",
+			"@italgas",
+			"@Nimbus",
+			"@ninbus",
+			"@PANNELLI",
+			"@telecomunicazioni",
+			"@tim",
+			"@fin",
+			"c:\\CASA\\LINGUAGGI\\DOS\\",
+			"\u0002",
+			"retail",
+			"batterie@idrogeno"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Project_RUST.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 71,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							],
+							[
+								41,
+								41
+							],
+							[
+								51,
+								51
+							],
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										57,
+										58
+									],
+									"2":
+									[
+										57,
+										58
+									],
+									"3":
+									[
+										57,
+										58
+									],
+									"4":
+									[
+										57,
+										58
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"3":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"4":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										32,
+										33
+									],
+									"2":
+									[
+										32,
+										33
+									],
+									"3":
+									[
+										32,
+										33
+									],
+									"4":
+									[
+										32,
+										33
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"rainbow_checked": true,
+							"syntax": "Packages/JSON/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.MD",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								391,
+								523
+							]
+						],
+						"settings":
+						{
+							"auto_name": "README.MD",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"rainbow_checked": true,
+							"syntax": "Packages/Textile/Textile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 92.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 126.400001526
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "Project_RUST.sublime-project",
+	"replace":
+	{
+		"height": 52.8
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\GESTIONI\\GESTIONE_LLPP\\25_GESTIONE_LLPP\\PRES3000_GESTIONE\\ARCHIVI_PRES3000\\PRES3000_NUMERI_TELEFONICI_DIPENDENTI\\Project_NUMERI_TELEFONICI_DIPENDENTI.sublime-project"
+			]
+		],
+		"width": 389.6
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 388.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
