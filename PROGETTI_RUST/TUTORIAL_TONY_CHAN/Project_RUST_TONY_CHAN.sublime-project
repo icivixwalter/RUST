@@ -1,0 +1,75 @@
+
+/*				IMPOSTAZION PERSONALI DI QUESTO PROGETTO
+		Quel comando in JSON definisce quali cartelle fanno parte del progetto in Sublime Text.
+		Vediamo il significato nel dettaglio:
+		 "folders" → Indica che stiamo elencando le cartelle incluse nel progetto.
+		[ ] → Significa che possiamo aggiungere più cartelle al progetto.
+		 "path" → Specifica il percorso della cartella principale del progetto.
+		                In questo caso, Sublime Text userà la cartella:
+		                c:/CASA/GE_CASA/GE_MARINO/BANCA/POCKET_OPTION/
+
+
+		 Cosa fa questo codice?
+		 Quando apri questo progetto in Sublime Text:
+
+		Verrà caricata la cartella "POCKET_OPTION" con tutti i file al suo interno.
+		Puoi vedere e navigare tra i file nel sidebar di Sublime Text.
+		Se vuoi aggiungere altre cartelle, puoi farlo così:
+		"folders":
+		[
+		    { "path": "c://CASA//GE_CASA//GE_MARINO//BANCA//POCKET_OPTION//" },
+		    { "path": "d://backup_progetti//" }
+		]
+
+		 Ora il progetto includerà anche d:/backup_progetti/.
+
+		 Spiegazione delle impostazioni personalizzate
+
+		"tab_size"                  : 3 → Imposta la larghezza di un tab a 3 spazi ma si trova nelle impostazioni generali
+		"translate_tabs_to_spaces"  : true → Converte i tab in spazi.
+		"remember_workspace"        : false → Non riapre automaticamente i vecchi progetti.
+		"word_wrap"                 : "auto" → Abilita il ritorno a capo automatico quando necessario.
+		"highlight_line"            : true → Evidenzia la riga attuale.
+
+		 Queste impostazioni si applicano solo a questo progetto.
+		No, l'ordine delle impostazioni non è importante in Sublime Text.
+		Puoi inserire le impostazioni nell'ordine che preferisci, purché siano all'interno
+		delle parentesi graffe {} e separati da virgole.
+
+		 Le impostazioni globali (per tutti i progetti) invece si trovano in Preferences.sublime-settings.
+
+
+	*/
+
+
+
+	//                      @IMPOSTAZIONI@PERSONALI DEL PROGETTO
+
+{
+    "folders":  // Sezione per elencare le cartelle del progetto
+    [
+/*{
+            "path": "c:/Casa/LINGUAGGI/RUST/RUST_TUTORIAL/RUST_TUTORIAL_TONY_CHAN/."
+            // Questo è il percorso della cartella principale del progetto.
+            // Il punto finale "." indica la cartella corrente.
+        }*/
+		{
+			"path": "c:/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/."
+		},
+	],
+    "settings":  // Sezione delle impostazioni specifiche del progetto
+    {
+        "translate_tabs_to_spaces": true,
+        // Converte automaticamente i tab in spazi (buona pratica in molti linguaggi, tra cui Rust).
+
+        "remember_workspace": false,
+        // Indica se ricordare o meno la disposizione dei file aperti e i layout della finestra.
+        // "false" significa che ogni volta che apri il progetto, Sublime non salverà lo stato precedente.
+
+        "word_wrap": "auto",
+        // Attiva il ritorno a capo automatico delle righe troppo lunghe. "auto" lo attiva in base al tipo di file.
+
+        "highlight_line": true,
+        // Evidenzia la riga su cui si trova il cursore. Utile per orientarsi nel codice.
+    },
+}

@@ -1,0 +1,25 @@
+/* PROGETTO ASYNC TOKIO
+     @async@tokio_(esempio di programmazione con un asincrono mediante TOKIO)
+
+il programma non scarica nulla fa solo una simulazione di attesa ossia una 
+pausa asincrona di 2 secondi.
+*/
+
+use tokio::time::{sleep, Duration};
+
+struct Downloader;
+
+impl Downloader {
+    async fn download(&self, url: &str) {
+        println!("Inizio download da {}", url);
+        sleep(Duration::from_secs(2)).await; // Simula un'attesa di 2 secondi
+        println!("Download completato da {}", url);
+    }
+}
+
+#[tokio::main]
+async fn main() {
+    println!("PROGETTO ASYNC TOKIO!");
+    let downloader = Downloader;
+    downloader.download("https://example.com").await;
+}

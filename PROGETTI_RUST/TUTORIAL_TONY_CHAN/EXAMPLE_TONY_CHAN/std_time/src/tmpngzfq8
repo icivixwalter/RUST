@@ -1,0 +1,14 @@
+/* PROGETTO DI GESTIONE DEI THREAD
+
+Qui,  utilizziamo  use  std::thread  per  importare  il  modulo  thread,
+creandone  uno nuovo  che  esegue  un  loop,  e  poi  facciamo
+"dormire"  il  thread  principale  per  un  breve periodo.
+   @std@thread_(esempio di gestione della concorrenza con i thread)
+
+
+ @std@time
+
+*/ 
+fn main() {
+    println!("Hello, world!");
+}

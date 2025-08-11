@@ -1,0 +1,6 @@
+[package]
+
+# esempio di commento di documentazione per i crate, moduli o funzioni
+name = "hello_world"
+version = "0.0.1"
+authors = [ "Il tuo nome <tu@esempio.it>" ]

@@ -1,0 +1,39 @@
+/* IMPORTO LA LIBRERIA PER LA GESTIONE DEL FILE SYSTEM std::fs
+
+@std@fcollection_(libreria per la gestione strutture dati
+
+
+*/
+
+
+fn main() {
+    println!("Hello, world!");
+}
+
+
+
+// Importa la struttura HashMap dalla libreria standard.
+// HashMap è una struttura dati che associa chiavi a valori.
+use std::collections::HashMap;
+
+// Funzione principale del programma, punto di ingresso
+fn main() {
+
+    println!("PROGETTO PER LA GESTIONE DELLE LIB !");
+
+    // Crea una nuova HashMap vuota, mutabile.
+    // La chiave è una stringa (&str), il valore è un intero (i32).
+    let mut mappa = HashMap::new();
+
+    // Inserisce una coppia chiave-valore nella mappa: "Chiave1" → 10
+    mappa.insert("Chiave1", 10);
+
+    // Inserisce un'altra coppia: "Chiave2" → 20
+    mappa.insert("Chiave2", 20);
+
+    // Itera su tutte le coppie della mappa per riferimento (senza spostarle)
+    for (chiave, valore) in &mappa {
+        // Stampa la chiave e il valore in formato "Chiave: Valore"
+        println!("{}: {}", chiave, valore);
+    }
+}

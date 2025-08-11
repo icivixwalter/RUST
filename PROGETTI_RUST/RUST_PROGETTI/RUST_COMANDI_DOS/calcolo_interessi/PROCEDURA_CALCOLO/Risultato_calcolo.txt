@@ -1,0 +1,3 @@
+Formula: capitale * (1.0 + tasso / 360.0).powf(tempo_anni)
+Parametri: Dati { capitale: 10000.0, tasso: 0.04, giorni: 458.0 }
+Risultato: 10001.413601624557

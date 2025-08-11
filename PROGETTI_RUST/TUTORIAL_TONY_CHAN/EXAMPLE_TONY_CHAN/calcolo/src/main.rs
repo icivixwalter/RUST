@@ -1,0 +1,51 @@
+/*Mettiamo insieme queste componenti per creare un semplice programma che legge
+un input dall'utente, effettua un calcolo e gestisce eventuali errori:
+
+Partiamo con use std::io per importare le funzionalità di input/output. La funzione
+main legge un numero dall'utente, lo converte da stringa a intero e lo valuta con
+una struttura if. Il programma gestisce eventuali errori durante la lettura dell'input
+o la conversione del numero, utilizzando .expect() per fornire messaggi di errore
+chiari in caso di fallimento.
+
+@std@io_(Esempio CON IL PROGRAMMA CALCOLO di utilizzo di std::io per le funzionalita di imput/output)
+*/
+
+use std::io;        //import la libreria
+
+fn main() {
+    println!("PROGRAMMA !");
+
+    println!("Inserisci un numero:");
+    //creo una variabile mutevole
+     let mut input = String::new();
+     //leggo la linea di comando con gestione errori
+     io::stdin().read_line(&mut input).expect("Errore nella lettura dell'input");
+
+        /*✅ Cosa fa riga per riga:
+        🔹 let numero: i32 = ...;
+            Dichiara una variabile chiamata numero di tipo intero a 32 bit (i32).
+        🔹 input.trim()
+                input è presumibilmente una String ottenuta da input dell'utente (es. da stdin).
+            .trim() rimuove spazi bianchi (iniziali e finali), inclusi: spazi tab newline \n o \r\n
+            Esempio: " 42\n" → "42"
+        🔹 .parse()
+                Tenta di convertire la stringa in un valore del tipo specificato.
+                In questo caso, i32 (un numero intero).
+                parse() restituisce un Result, che può essere:
+                Ok(numero) se la conversione va a buon fine
+                Err(...) se fallisce (es. "abc" non è un numero)
+        🔹 .expect("Inserisci un numero valido")
+            Se parse() fallisce, expect() termina il programma e mostra il messaggio:
+            */
+                 let numero: i32 = input.trim().parse().expect("Inserisci un numero valido");
+
+               let risultato = if numero > 40 {
+                    "Il numero è maggiore di 40."
+                } else {
+                    "Il numero è 40 o minore."
+                };
+
+                println!("{}", risultato);
+
+
+                }

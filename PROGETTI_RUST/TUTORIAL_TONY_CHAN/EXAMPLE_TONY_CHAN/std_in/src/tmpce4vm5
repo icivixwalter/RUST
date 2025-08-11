@@ -1,0 +1,23 @@
+/* IMPORTO LA LIBRERIA std::io ma utilizzo 
+        std:in per leggere una riga di testo dall'imput utente dalla tastiera.
+
+*/
+
+
+use std::io::{self, Write};
+
+fn main() {
+
+    println!("PROGETTO DI GESTIONE DELLA LIBRERIA STD::In!");
+
+    let mut input = String::new();   //In Rust, print!() non stampa subito, ma bufferizza l'output.
+    print!("Inserisci il tuo nome: ");
+    // Se vuoi essere sicuro che un prompt venga mostrato prima
+    //che l’utente digiti qualcosa (es. "Inserisci il tuo nome: "), 
+    //devi forzare lo svuotamento del buffer con .flush().
+    //in questo modo viene subito visualizzato print! ..
+    io::stdout().flush().unwrap();  // Forza la stampa immediata
+    
+    io::stdin().read_line(&mut input).expect("Errore nella lettura");
+    println!("Ciao, {}!", input.trim());
+}

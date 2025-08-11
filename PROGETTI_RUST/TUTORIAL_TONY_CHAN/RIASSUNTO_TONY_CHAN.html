@@ -1,0 +1,1670 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+  max-width: 980px;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAABE0AA8AAAAAHWwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABWAAAADsAAABUIIslek9TLzIAAAGUAAAAQwAAAFY3d1HZY21hcAAAAdgAAACqAAACOvWLi0FjdnQgAAAChAAAABMAAAAgBtX/BGZwZ20AAAKYAAAFkAAAC3CKkZBZZ2FzcAAACCgAAAAIAAAACAAAABBnbHlmAAAIMAAABdQAAAjkYT9TNWhlYWQAAA4EAAAAMwAAADYQ6WvNaGhlYQAADjgAAAAfAAAAJAc6A1pobXR4AAAOWAAAACAAAAA0Kmz/7mxvY2EAAA54AAAAHAAAABwQPBJubWF4cAAADpQAAAAgAAAAIAEHC/NuYW1lAAAOtAAAAYQAAALxhQT4h3Bvc3QAABA4AAAAfgAAAMS3SYh9cHJlcAAAELgAAAB6AAAAhuVBK7x4nGNgZGBg4GIwYLBjYHJx8wlh4MtJLMljkGJgYYAAkDwymzEnMz2RgQPGA8qxgGkOIGaDiAIAJjsFSAB4nGNgZHZmnMDAysDAVMW0h4GBoQdCMz5gMGRkAooysDIzYAUBaa4pDA4Pwz+yMwf9z2KIYg5imAYUZgTJAQDcoQvQAHic7ZHNDYJAFIRnBXf94cDRIiyCKkCpwFCPJ092RcKNDoYKcN4+EmMPvpdvk539zQyAPYBCXEUJhBcCrJ5SQ9YLnLJe4qF5rdb+uWPDngNHTkta101pNyWa8lMhn6xx2dqUnW4q9YOIhAOOeueMSgsR/6ry+P7O5s6xVNg4chBsHUuFnWNJ8uZYwrw7chrsHXkODo7cB0dHOYCTY8kv0VE2WJKD6gOlWjsxAAB4nGNgQAMSEMgc9D8LhAESbAPdAHicrVZpd9NGFB15SZyELCULLWphxMRpsEYmbMGACUGyYyBdnK2VoIsUO+m+8Ynf4F/zZNpz6Dd+Wu8bLySQtOdwmpOjd+fN1czbZRJaktgL65GUmy/F1NYmjew8CemGTctRfCg7eyFlisnfBVEQrZbatx2HREQiULWusEQQ+x5ZmmR86FFGy7akV03KLT3pLlvjQb1V334aOsqxO6GkZjN0aD2yJVUYVaJIpj1S0qZlqPorSSu8v8LMV81QwohOImm8GcbQSN4bZ7TKaDW24yiKbLLcKFIkmuFBFHmU1RLn5IoJDMoHzZDyyqcR5cP8iKzYo5xWsEu20/y+L3mndzk/sV9vUbbkQB/Ijuzg7HQlX4RbW2HctJPtKFQRdtd3QmzZ7FT/Zo/ymkYDtysyvdCMYKl8hRArP6HM/iFZLZxP+ZJHo1qykRNB62VO7Es+gdbjiClxzRhZ0N3RCRHU/ZIzDPaYPh788d4plgsTAngcy3pHJZwIEylhczRJ2jByYCVliyqp9a6YOOV1WsRbwn7t2tGXzmjjUHdiPFsPHVs5UcnxaFKnmUyd2knNoykNopR0JnjMrwMoP6JJXm1jNYmVR9M4ZsaERCICLdxLU0EsO7GkKQTNoxm9uRumuXYtWqTJA/Xco/f05la4udNT2g70s0Z/VqdiOtgL0+lp5C/xadrlIkXp+ukZfkziQdYCMpEtNsOUgwdv/Q7Sy9eWHIXXBtju7fMrqH3WRPCkAfsb0B5P1SkJTIWYVYhWQGKta1mWydWsFqnI1HdDmla+rNMEinIcF8e+jHH9XzMzlpgSvt+J07MjLj1z7UsI0xx8m3U9mtepxXIBcWZ5TqdZlu/rNMfyA53mWZ7X6QhLW6ejLD/UaYHlRzodY3lBC5p038GQizDkAg6QMISlA0NYXoIhLBUMYbkIQ1gWYQjLJRjC8mMYwnIZhrC8rGXV1FNJ49qZWAZsQmBijh65zEXlaiq5VEK7aFRqQ54SbpVUFM+qf2WgXjzyhjmwFkiXyJpfMc6Vj0bl+NYVLW8aO1fAsepvH472OfFS1ouFPwX/1dZUJb1izcOTq/Abhp5sJ6o2qXh0TZfPVT26/l9UVFgL9BtIhVgoyrJscGcihI86nYZqoJVDzGzMPLTrdcuan8P9NzFCFlD9+DcUGgvcg05ZSVnt4KzV19uy3DuDcjgTLEkxN/P6VvgiI7PSfpFZyp6PfB5wBYxKZdhqA60VvNknMQ+Z3iTPBHFbUTZI2tjOBIkNHPOAefOdBCZh6qoN5E7hhg34BWFuwXknXKJ6oyyH7kXs8yik/Fun4kT2qGiMwLPZG2Gv70LKb3EMJDT5pX4MVBWhqRg1FdA0Um6oBl/G2bptQsYO9CMqdsOyrOLDxxb3lZJtGYR8pIjVo6Of1l6iTqrcfmYUl++dvgXBIDUxf3vfdHGQyrtayTJHbQNTtxqVU9eaQ+NVh+rmUfW94+wTOWuabronHnpf06rbwcVcLLD2bQ7SUiYX1PVhhQ2iy8WlUOplNEnvuAcYFhjQ71CKjf+r+th8nitVhdFxJN9O1LfR52AM/A/Yf0f1A9D3Y+hyDS7P95oTn2704WyZrqIX66foNzBrrblZugbc0HQD4iFHrY64yg18pwZxeqS5HOkh4GPdFeIBwCaAxeAT3bWM5lMAo/mMOT7A58xh0GQOgy3mMNhmzhrADnMY7DKHwR5zGHzBnHWAL5nDIGQOg4g5DJ4wJwB4yhwGXzGHwdfMYfANc+4DfMscBjFzGCTMYbCv6dYwzC1e0F2gtkFVoANTT1jcw+JQU2XI/o4Xhv29Qcz+wSCm/qjp9pD6Ey8M9WeDmPqLQUz9VdOdIfU3Xhjq7wYx9Q+DmPpMvxjLZQa/jHyXCgeUXWw+5++J9w/bxUC5AAEAAf//AA94nIVVX2hbZRQ/5/t7893s5ja9f7ouzdZ0TTqz3bRJmogbWya6bG6Cq0VbSV2ddIJjFtfIQHEig80Hda8yUN/0YQz8AyriiyD+xQd92R4HCnaCb3samnpumrpsCsLlfPf7zvedc37nL3CAtc/5W/wQZGA3tOBSY/g+TMjHmwzEoM1Q8+ZjRZY4oJhmBw5/YB6Za0yC5AkhlwA1A1yCBIBOwCII0Cj0U8BAMdUCzq05sKwkP7SlUY6fcJk4Fb/RyE79/6P5hjM/F4aZiXBoeMgzcqQ4Xi1hPqfDLG5FT+lchCVU3lYMyvuwhl1mqndQL0RsuloLywHtthLXI06OblTrhfWVnpSJ5+mwu/JdbtuN3IAnkW0LLMcRwaC7ktrlzridM6kVdyf9uO1UNBByI7JhwtG2sEwab07ORBeilWhqavJCqV0qzZTOl/7ZXQ5TbTcdcFelyGhhRDAQpdqp1FEX3w3cFTc1k9pJQkmm4ySCbSikxRP2QOfN+0tHS5MrpQuTU1Mk5nw0E5Xa0WvrOwDyGax9yB9ma6DAg82wHc43SAGTI4GjBWebOePAERFE8/AHaQpZASSTy8A4WwZiLQMQ82mFKATO0ILicRAoDm9p5P99E5b/fXG+kQYY3TYUuqmERWYoT0u/GNYL2q/4WB3LaVS+VynXsVYIcWw6DkCh3nX1D+VzlYN4LClF5yexSQos8exqZ3KVP+wtrC54u4Nznq6cq+xpMpUUnZ8FUYzE86ud0g28NOIv3Gj5/rmA3ABs7S/ywzFuQ4qyd6QxfNtiQIaEgp3w/entQg4Vcbqa16M5FfpeUB8t1+qeg7mI7cUyOe79wOk86gSxkVec4KPTX69++5x68Yubn5/F+w52z7u08sJX7fZXv8ekT/d2mILJxq6sn+SC6qEJknzLJCxyZEKwWVqYmAPBxBE/9DLeZiWHu7lcr/VytrCRuHojncNuTt9h46tmacmYisnSamdN2bZptcsmSysdVsy1PrOvOzF3xN64Rb937t/og9KHxYdcjIUqFAmIAHGHNzlns+RTPgeUYAQm9DwpNxfxbhhBHPaw3/gfTcXO2L+eJVIx5nsyGkvm9X4/f+bGkH45G0PaSjcMXTjcZyTvi3UdHoCDjQd3IDUVsgwYmUoJK/gp4JJxeRI0MKHZIkgynyIBqBTOUs6rOVCojvjZ4mCQz49ZMlMcp8QoYk6NoBfsxnJtsBohpa8iGJS+ZH7gU7NxME6cmF+t7cO9vB8d3jTWSct0ycW9ranXmolNDwmVkNnxe+8JtoztwS5rKJ0xWS95tQ/1zMYzg69MzUZnNtl1ofNbsml/OJm6f9wjRjpnu2o4MzHzn77IQkRd+1DjwMQ2pqSjGMMhyjrgTbBAKksuUm0iU7hI0aN2wOKOq7WYBSH0HGihj/jkiPxAfmwsEbfYrjMG+j3ij932Db/LV7I/xruNrhnroxjR9HRMb2nTvO0ZXOoHPk8H2ZhDPx93qcE/53sH5np/dkIP7zzhTVKdR/BAY/9ElkkR+A6lJGsqpJ4oQcTxpvBT3Kn58VkaJjgHyPEIws57xkaHh9KuVpDEpJZeMbZ5w/zBHi5NMQ4r5VphsFqID7TyB9eR4pX216c3AHxpdAwoqU9qg0ZJ6yVLKmMSz1iG2z27ifx18NkY0LPx1W/wCc2l5LrznrIsiKsqbmB78A9wIGx4tI8rjihVHJyY9pgMirenVq0yWg7Iw7eogG7ZgYM3qR9959A/fZkg6MnD/exlkmc+jWV4SB15XUR+eqC6l6ZmgPtN9z5JMfik05OV8ljylunJ4J+wA/FUaQSSKotsYsCWqaPBidBLcxkWx7XKFRIb45TGaEhjlF9uUVPqXOtcIwsXbBvfoZXIyRYFdkfnqjExH98xpnPczqzjX/uNdO1Y17Wpi5+6Ts8BXtjVFasp9KZ1mOiNbH65c5w6HgmyF2jFCZywM8mWjRc7T5Pmt0lRy7Y71+jYbpGyvwG4sH0XeJxjYGRgYADiwBB/53h+m68M3MwvgCIM1z5N/g6j///9v5H5BbMnkMvBwAQSBQCIcA9gAHicY2BkYGAO+p8FJF/8//v/F/MLBqAICuAFALYQB5kAeJxjfsHAwLwAiCNB+P9fbJjJmoGBMRUo/wKCAfO2EnQAAAAAANoBXgGcAgICVALaA1IDvAPkBAYEPARyAAEAAAANAF0ABAAAAAAAAgAUACQAcwAAAG4LcAAAAAB4nHWRzWrCQBSFT+pPqUIXLXTTzayKUohGKIibCoLuhbrrYtTRxCYZmYyKyz5Fd32HvlDfoO/QkziIFJtw9bvnnpl7ZwLgBt/wcHieGAf2UGd24Atcou+4RH3kuEweO66QXx1XyaHjGh6ROa7jFp/cwStfMVvhy7GHO+/e8QWuvcBxifqz4zL5xXGF/Oa4Sn53XMPE+3Bcx4P3M9DrvYmWoRWNQVN02kFXTPdCU4pSGQu5saE2meiLhU6timPtz3SSs9ypTCdqrJabWJoT5QQnymSRTkXgt0/UkUqVkVbN807ZdtmxdiEWRidi6HqItdErNbN+aO2612qd9sYAGmvsYRBhyUu0EGhQbfK/gzYCdElTOgSdB1eEFBIxFYkNV4RFJWPeZyyYpVQVHTHZx4y/yVGX2LGWFZri51TccUOn5B7nPefVCSPvGhVVwUl9znveO2KkhV8Wk82PZ8qwZf8OVcu1+fSmWCMw/HMOwXvKaysqM+p+cVuWag8tvv+c+xdd+4+teJxtjUEOwiAURJla24KliQfhUA2g/Sl+CKXx+loNrpzVezOLEY34Ron/0WhwQoszOvQYIKFwwQiNSbSBeO2SZ0tBP4j3zVjKNng32ZmtD1VVXCuOiw/pJ8S3WOU6l+K5UOTaDC4+2TjKMtN9KQf1ezLx/Sg/00FCvABHhjDjAAB4nGPw3sFwIihiIyNjX+QGxp0cDBwMyQUbGVidNjEwMmiBGJu5mBg5ICw+BjCLzWkX0wGgNCeQze60i8EBwmZmcNmowtgRGLHBoSNiI3OKy0Y1EG8XRwMDI4tDR3JIBEhJJBBs5mFi5NHawfi/dQNL70YmBhcADHYj9AAA) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable,
+.markdown-body .highlighttable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr,
+.markdown-body .highlighttable {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite,
+.markdown-body .highlighttable pre,
+.markdown-body .highlighttable div.highlight {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td,
+.markdown-body .highlighttable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 3px;
+}
+
+.markdown-body code:not(.highlight):not(.codehilite), .markdown-body samp {
+  background-color: rgba(0,0,0,0.04);
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight,
+.markdown-body pre {
+  border-radius: 3px;
+}
+
+.markdown-body :not(.highlight) > pre {
+  background-color: #f7f7f7;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.markdown-body diagram-div, .markdown-body div.uml-sequence-diagram, .markdown-body, div.uml-flowchart {
+  overflow: auto;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*GitHub*/
+.highlight {background-color:#f7f7f7;color:#333333;}
+.highlight .hll {background-color:#ffffcc;}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#dd1144}
+.highlight .n{color:#333333}
+.highlight .na{color:teal}
+.highlight .nb{color:#0086b3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:teal}
+.highlight .ni{color:purple}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:navy}
+.highlight .nv{color:teal}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#dd1144}
+.highlight .sc{color:#dd1144}
+.highlight .sd{color:#dd1144}
+.highlight .s2{color:#dd1144}
+.highlight .se{color:#dd1144}
+.highlight .sh{color:#dd1144}
+.highlight .si{color:#dd1144}
+.highlight .sx{color:#dd1144}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#dd1144}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:teal}
+.highlight .vg{color:teal}
+.highlight .vi{color:teal}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+</style><title>RIASSUNTO_TONY_CHAN</title></head><body><article class="markdown-body"><h1 id="riassunto_tony_chanmd">RIASSUNTO_TONY_CHAN.md<a class="headerlink" href="#riassunto_tony_chanmd" title="Permanent link"></a></h1>
+<p><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/RAUST" title="GitHub User: RAUST">@RAUST</a><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/TUTORIAL" title="GitHub User: TUTORIAL">@TUTORIAL</a><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/TONY" title="GitHub User: TONY">@TONY</a><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/CHAN" title="GitHub User: CHAN">@CHAN</a></p>
+<h2 id="guida-mark-down">GUIDA MARK DOWN<a class="headerlink" href="#guida-mark-down" title="Permanent link"></a></h2>
+<p>si trova qui: <a href="https://learnxinyminutes.com/it/markdown/">https://learnxinyminutes.com/it/markdown/</a></p>
+<p>esempio i titoli:</p>
+<pre><code>        # Questo è un &lt;h1&gt;
+        ## Questo è un &lt;h2&gt;
+        ### Questo è un &lt;h3&gt;
+        #### Questo è un &lt;h4&gt;
+        ##### Questo è un &lt;h5&gt;
+        ###### Questo è un &lt;h6&gt;1
+</code></pre>
+<h3 id="guida-completa-per-sviluppatori-e-principianti-giacomo">Guida completa per sviluppatori e principianti <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/giacom" title="GitHub User: giacom">@giacom</a>\o<a class="headerlink" href="#guida-completa-per-sviluppatori-e-principianti-giacomo" title="Permanent link"></a></h3>
+<p>Libro cha ha acquistato giacomo.</p>
+<h3 id="introduzione">Introduzione<a class="headerlink" href="#introduzione" title="Permanent link"></a></h3>
+<p>Sviluppato inizialmente da  Graydon Hoare e sponsorizzato<br />
+da Mozzilla nato con l&rsquo;obiettivo di combinare prestazioni elevate e<br />
+controllo della memoria di C e C++ orientato alla prevenzione della 
+sicurezza e degli errori tipo:<br />
+   data races
+   buffer overflows
+Sponsorizzato da Mozzilla perche migliorava le prestazioni di Firefox-
+Quali paradigmi di programmazione offre:
+   programmazione imperativa
+   programmazione funzionale
+   programmazione orientata agli oggetti</p>
+<p>concetto di ownership   = per la gestione
+      sicura della memoria e l&rsquo;assenza di errore di concorenza.
+   Cargo = il suo sistema di gestione dei pacchetti e build toll valido per sistema embeddet e motori di gioco.</p>
+<p>Sintassi familiare con C e C++</p>
+<h4 id="breve-storia">Breve storia<a class="headerlink" href="#breve-storia" title="Permanent link"></a></h4>
+<p>Inizia del 2006 quando Graydon Hoare creo nel tempo libero questo linguaggio cercando di
+risolvere i problemi di sicurezza di C e C++ progettato per offrire prestazioni di basso livello di C e C++ 
+senza i problemi di memoria di</p>
+<p>buffer overflows</p>
+<p>data races        = In ambito informatico, una data race (o corsa ai dati) è una condizione che si verifica 
+   quando più thread o processi accedono contemporaneamente a una risorsa condivisa (come una variabile), 
+   e almeno uno di questi accessi è una scrittura. Questo può portare a risultati inattesi, imprevedibili e, 
+   spesso, errati, poiché l&rsquo;ordine in cui i thread accedono alla risorsa non è controllato.</p>
+<p>Nel 2009 fu sponsorizzato da mozzilla per miglioare le prestazione di Firefox e nel 2010 fu creato il primo 
+compilatore rustc scritto interamente in Rust.</p>
+<p>Innovativo è stato il sistema di &ldquo;ownership = proprieta&rdquo;</p>
+<p>Nel <strong>2015</strong> ragiunse la prima versione stabile 1.0 e con esso fu utilizzato per il progetto  del nuovo</p>
+<p>motore di rendering</p>
+<p>Un motore di <strong>rendering</strong></p>
+<pre><code> è un componente software o hardware che trasforma dati
+ codificati, come il codice HTML di una pagina web o i dati di
+ un modello 3D, in una rappresentazione visiva, che può essere
+ visualizzata su uno schermo. In altre parole, è il responsabile di prendere le istruzioni e trasformarle in immagini o video
+ che possiamo vedere.
+</code></pre>
+<p>Nel 2017 vennero introdotte nuove funzionalita</p>
+<p>non-lexical lifetimes   = semplificarono la gestione della memoria
+   async/await             = resero la programmazione asincrona piu accessibile e potente.</p>
+<p>Nel 2021 con la versione 1.50 rusto miglioro il suo ecosistema ed ha
+introdotto ottimizzazione del compilatore e nuove libreria standard.</p>
+<h4 id="lo-standard-e-le-ultime-versioni-lo-standard-viene-mantenuta-dalla">Lo standard e le ultime versioni Lo standard viene mantenuta dalla<a class="headerlink" href="#lo-standard-e-le-ultime-versioni-lo-standard-viene-mantenuta-dalla" title="Permanent link"></a></h4>
+<p>comunita attiva Rust Fundation con un modello di rilascio stabile e<br />
+organizzato con versioni stabili ogni 6 settimane e con impegno alla 
+retro compatibilita.</p>
+<p>Le innovazioni ultime sono:</p>
+<ul>
+<li>miglioramento della programmazione asincrona</li>
+<li>trait migliorati per il polimorfismo</li>
+<li>Cargo ha semplifato la gestione dei pacchetti e dipendenze;</li>
+<li>vers. 1.81 migliorato la funzione estena con extern C che
+      prima creava panico non gestito oggi blocca il compilatore;</li>
+<li>i metodi ambigui sono stati migliorati con la nuova versione
+         i metodi sono piu prevedibili</li>
+</ul>
+<h3 id="rust-pro-e-contro">Rust pro e contro<a class="headerlink" href="#rust-pro-e-contro" title="Permanent link"></a></h3>
+<h5 id="tra-i-punti-di-forza-la-sicurezza-di-gestione-e-previene-gli-errori-di">Tra i punti di forza la sicurezza di gestione e previene gli errori di<a class="headerlink" href="#tra-i-punti-di-forza-la-sicurezza-di-gestione-e-previene-gli-errori-di" title="Permanent link"></a></h5>
+<pre><code>  - null pointer dreference
+  - buffer overflows
+  - la concorrenza senza la garbace colletion
+</code></pre>
+<p>in questo modo è un liguaggio adatto per il software critico dove la sicurezza e l&rsquo;affidambilita sono fondamentali;
+   motoridi gioco e sofware di rete.</p>
+<p>La memoria viene gestia in modo sicuro con
+      - ownership
+         ogni valore stringa o numero ha un proprietario alla volta
+         fino all&rsquo;uscita dello scope dove la memoria viene deallocata
+      - borrow checker
+            Ruolo principale del borrow checker</p>
+<pre><code>           Garantire la sicurezza della memoria: Rust utilizza un
+           sistema di ownership che stabilisce chi possiede un
+           dato in memoria e per quanto tempo. Il borrow checker
+           verifica che le regole di ownership siano rispettate:
+           Ogni dato ha un proprietario. Può esistere solo un
+           proprietario alla volta. Il dato viene deallocato
+           automaticamente quando il proprietario esce dallo scope.
+
+           Gestire il borrowing: Borrowing consente di accedere ai dati senza trasferire la proprietà. Questo può avvenire
+           in due modi:
+                 - Mutabile: un solo riferimento mutabile  alla volta.
+                 - Immutabile: multipli riferimenti immutabili
+                 sono consentiti, ma non contemporaneamente a
+                 riferimenti  mutabili.
+
+           Il borrow checker garantisce che questi riferimenti non entrino in conflitto tra loro.
+
+           Prevenire data race: Una data race si verifica quando:
+           Due o più thread accedono simultaneamente alla stessa risorsa. Almeno uno di essi modifica la risorsa.
+           Non ci sono meccanismi di sincronizzazione per gestire l’accesso. Il borrow checker impedisce questi 
+           scenari, obbligando l'accesso sicuro alle risorse condivise.
+
+           Impedire l'uso di dati non validi: Il borrow checker garantisce che i dati non vengano utilizzati dopo
+           essere stati spostati, invalidati o rilasciati.
+     - Cargo, ecosistema che semplifica  la gestione dei pacchetti
+           e tooll, questo è uno dei punti forza.
+     - Rust supporta i paradigmi (modelli o insieme di teorie
+           che la comunita scientifica utilizza per la propria
+           ricerca pratica e quindi il cambio di paradigma o
+           rivoluzione scientifica avviene quando un modello
+           sostituisce un'altro) e i tre paradigmi sono:
+              - imperativa;
+              - funzionale;
+              - concorrente;
+           rendendo rust flessibile adatto a diversi progetti e
+           permettendo agli sviluppatore di sceglire l'approccio
+           piu adatto.
+
+           Esempi:
+
+           1. ✅ Paradigma Imperativo
+              Nel paradigma imperativo descrivi passo dopo passo cosa deve fare il computer.
+
+              🔧 Esempio: Calcolo della somma di numeri
+              rust
+              Copia
+              Modifica
+
+                    fn main() {
+                        let mut sum = 0;
+                        for i in 1..=5 {
+                            sum += i;
+                        }
+                        println!("La somma è: {}", sum);
+                    }
+              Spiegazione:
+
+                    let mut sum = 0; definisce una variabile mutabile.
+
+                    Il ciclo for è tipico dello stile imperativo.
+
+                    Modifichiamo lo stato (variabile sum) passo per passo.
+           2. ✅ Paradigma Funzionale
+
+              Rust supporta caratteristiche funzionali: funzioni pure, closure, iteratori, immutabilità, ecc.
+
+              🔧 Esempio: Somma con stile funzionale usando iteratori
+
+                    fn main() {
+                           let sum: i32 = (1..=5).sum();
+                           println!("La somma è: {}", sum);
+                       }
+
+                 Oppure con map e filter:
+                    fn main() {
+                        let squares: Vec&lt;i32&gt; = (1..=5)
+                            .map(|x| x * x)
+                            .filter(|x| x % 2 == 0)
+                            .collect();
+
+                        println!("Quadrati pari: {:?}", squares);
+                    }
+
+                 Spiegazione:
+
+                    map, filter, collect sono tipici della programmazione funzionale.
+
+                    Non c’è mutabilità o gestione manuale dello stato.
+           3. ✅ Paradigma Concorrente
+
+              Rust ha un eccellente supporto alla programmazione concorrente e parallela, grazie alla ownership e al
+              compilatore che garantisce la sicurezza dei thread.
+
+              🔧 Esempio: Esecuzione concorrente con std::thread
+                    use std::thread;
+
+                       fn main() {
+                           let handle = thread::spawn(|| {
+                               for i in 1..=5 {
+                                   println!("Thread secondario: {}", i);
+                               }
+                           });
+
+                           for i in 1..=5 {
+                               println!("Thread principale: {}", i);
+                           }
+
+                           handle.join().unwrap(); // Attende la fine del thread secondario
+                       }
+
+               Spiegazione:
+
+                 thread::spawn crea un nuovo thread.
+
+                 join() sincronizza e attende il completamento.
+
+                 Nessun uso esplicito di unsafe, tutto è gestito in sicurezza dal compilatore.
+
+              Altri strumenti per la concorrenza:
+                 std::sync::mpsc per canali (message passing)
+
+                 tokio per programmazione asincrona
+
+                 rayon per parallelismo con iteratori paralleli
+
+        ✅ Conclusione
+
+           Paradigma   | Caratteristiche in Rust                        | Esempio
+           ------------|------------------------------------------------|-------------------------------
+           Imperativo  | Stato mutabile, cicli, controllo esplicito     | for, let mut, if, while
+           Funzionale  | Closure, immutabilità, iteratori               | map, filter, fold, sum()
+           Concorrente | Sicurezza a compile-time, gestione thread-safe | thread::spawn, join, channel
+</code></pre>
+<p>Gli svantaggi
+   - curva di apprendimento difficile
+   - sintassi complessa e gestione della ownership complicata;
+   - linguaggio eccessivo per progetti semplici;
+   - tempo di compilazione lungo;</p>
+<h4 id="strumenti-e-tools-di-lavoro">Strumenti e tools di lavoro<a class="headerlink" href="#strumenti-e-tools-di-lavoro" title="Permanent link"></a></h4>
+<pre><code>  puo essere utilizzato un semplice codice di testo ma quando i progetti
+  sono complesso occorre un IDE; inoltre non utilizza il modello
+
+  JIT = just in time come C# ma il modello:
+
+     AOT = ahead-of-time = ossia il codice viene tradotto in binari
+     eseguibili  nella compilazione prima della sua esecuzione, garantendo
+     sicurezza e ottimizzazione delle prestazione.
+</code></pre>
+<h4 id="linguaggio-macchina">LINGUAGGIO MACCHINA<a class="headerlink" href="#linguaggio-macchina" title="Permanent link"></a></h4>
+<p>La programmazione si distingue in BASSO LIVELLO = come assembly che costringe i<br />
+   programmatori a lavorare molto vicino all&rsquo;hardware ed a controllare la memoria.  </p>
+<p>Rust è un linguaggio ad ALTO LIVELLO  progettato per fornire astrazioni moderne<br />
+   e controllando le risorse come la memoria.
+   Essendo un linguaggio AOT = aead-of-time = significa che il compilatore rustc<br />
+   trasforma in binario eseguibile il listato del programmatore risultando diverso<br />
+   dai linguaggi Just-In-Time tipo Java o C# dove il linguaggio viene parzialmente<br />
+   interpretato. Inoltre a differenza di C++ o Assembly dove il programmatore deve<br />
+   deallocare la memoria, rust utilizza  il suo sitema di ownership e borrow cheching<br />
+   consentendo sicurezza della memoria.
+   Rust è anche cross-compilation = puo essere compilato per diverse piattaforme.  </p>
+<h4 id="ai-intelligenza-artificiale">AI INTELLIGENZA ARTIFICIALE<a class="headerlink" href="#ai-intelligenza-artificiale" title="Permanent link"></a></h4>
+<p>Possiamo utilizzare Ai per avere un tutor in rust.  </p>
+<h3 id="debug-boilerplate-code-e-convenzioni">Debug, Boilerplate code e convenzioni<a class="headerlink" href="#debug-boilerplate-code-e-convenzioni" title="Permanent link"></a></h3>
+<pre><code>  - debugging
+     Rust utilizza macro dbg!() che stampa su console il valore e la posizione del codice  
+     es.   let x = 5; dbg!(x) //stampa il valore 5;
+
+  - println!()  = consente di stampare variabili in fase di esecuzione ma alcuni tipi devono  
+  essere implementati con trait Debug; e puoi anche creare tipi personalizzati da richiamare  
+  con #[derive(Debug)]
+
+  - boilreplate code  
+     rust riduce la possibilita di costruire codice codice ripetitivo e rindodante con :
+        @ i trait = che permetto di generare codice ripetitivo automaticamente  
+        @ macro   = tipo vec![] crea un vettore con tutti gli elementi in modo automatico.  
+  - zero-cost abstractions  
+     puoi utilizzare strutture ad altro livello tipo Result + Option senza costi extra in termini  
+     di prestazioni e potento scrivere codice boilerplate per la gestione degli errori e dei valori  
+     nulli.
+</code></pre>
+<h3 id="termini-comuni-in-rust">Termini comuni in rust<a class="headerlink" href="#termini-comuni-in-rust" title="Permanent link"></a></h3>
+<ul>
+<li>Inferire<br />
+        Il compilatore puo inferire o ricavare i tipi di variabili<br />
+        senza dichiararli im modo esplicito ma sono dedotti automaticamente<br />
+        dalla verbosita.  </li>
+<li>Monomorfizzazione:  processo in cui il compilatore genera funzioni generiche<br />
+        per ciascun tipo utilizzato ottimizzando il codice ed eliminando l&rsquo;overhead<br />
+        associato al dispach dinamico.
+            spiegazione: (In sintesi, l&rsquo;overhead del dispatch dinamico è il costo aggiuntivo, .
+            in termini di tempo di esecuzione, associato alla determinazione<br />
+            della funzione da chiamare a runtime. Questo costo è assente nel dispatch statico,<br />
+            che risolve la chiamata di funzione a tempo di compilazione.)  </li>
+<li>Puntatori e puntatori raw:<br />
+      a)  i puntatori in Rust, come &amp; e &amp;mut, sono sicuri perché rispettano le regole<br />
+          del  borrowing  e  dell&rsquo;ownership;<br />
+      b) i  puntatori  raw,  come  *const  e  *mut,  sono  meno  sicuri  perché<br />
+         permettono l&rsquo;accesso diretto alla memoria senza le garanzie del borrowing.  </li>
+<li>Heap e stack:<br />
+      a) heap  =  il primo è usato per dati dinamici con dimensioni variabili, richiedendo però più risorse<br />
+         per gestire la memoria.<br />
+      b) stack = L’altro per dati di dimensioni fisse. Ha un accesso molto più rapido.  </li>
+<li>Ownership  e  borrowing:<br />
+      a) ownership    =  l&rsquo;ownership  rappresenta  il  controllo  esclusivo  di  una  variabile<br />
+      b) borrowing    =   prendere in prestito il valore di una variabile temporaneamente, sia in modo<br />
+<em><strong>mutabile</strong></em>   che <em><strong>immutabile</strong></em>, mantenendo la sicurezza della memoria. </li>
+<li>
+<p>Operazioni  atomiche: 
+      sono  operazioni  che  vengono  eseguite  come  un&rsquo;unica  operazione  indivisibile,<br />
+      usate per sincronizzare l&rsquo;accesso concorrente ai dati tra thread senza incorrere in race conditions.  </p>
+</li>
+<li>
+<p>Struct,  trait  e  crate:<br />
+         - struct       = è  una  struttura  dati  che  raggruppa  variabili;<br />
+         -  trait       = i  trait  definiscono  il comportamento  che  può  essere<br />
+                        implementato  dalle  strutture<br />
+         - crate        =  è  un&rsquo;unità  di compilazione, come una libreria o un pacchetto.  </p>
+</li>
+<li>Null  pointer,  race  condition:
+         - null  pointer   =   rappresenta  un  puntatore  che  non  punta  a  nessun<br />
+                           valore  valido
+         - race  condition =   si  verifica  quando  più  thread  accedono  a  dati  condivisi<br />
+                  senza la corretta sincronizzazione, causando comportamenti imprevedibili. </li>
+<li>Attributi e riferimenti:  <ul>
+<li>gli attributi    = servono a modificare il comportamento del compilatore o del codice.  </li>
+<li>i riferimenti    =  (&amp;  e  &amp;mut)  sono  puntatori  sicuri  che  permettono  l&rsquo;accesso<br />
+              - a  valori  senza  trasferirne l&rsquo;ownership. 
+              - </li>
+</ul>
+</li>
+<li>Pattern  Matching:<br />
+         consente  di  DESTRUTTURARE, CONFRONTARE  E GESTIRE I DATI in  modo  sicuro  e  conciso.<br />
+         Utilizzando  la parola chiave  match, si  possono  esaminare  diversi casi di un  tipo,<br />
+         come un  enum  o  Option, e gestire tutte le possibilità in modo esaustivo,<br />
+         migliorando la sicurezza del codice. </li>
+<li>
+<p>Polimorfismo ad hoc:<br />
+         La capacita di una funzione o di un metodo di lavorare con diversi tipi di dati ma con<br />
+         comportamenti diversi per ciascuno di loro. Si utilizza il 
+         <strong><span style="font-size: 24px;">trait</span></strong>  che consentono di definire un insieme di
+         metodi che devono essere implementati dai tipi che aderiscono al metodo. Ogni metodo puo
+         avere una implementazione specifica per comportamenti differenziati.</p>
+</li>
+<li>
+<p>Pattern
+         Sono schemi ripetibili ed efficaci come soluzioni ricorrente ad esemp Option e Result<br />
+         che gestiscono valori opzionali e gli errori in modo sicuro.  </p>
+</li>
+<li>Anti Pattern 
+         Pratica dannosa che comporta la cattiva manutenzione degli errori. Ad es. utilizzo eccessivo ..
+         dei puntatori raw con vulnerabilita della memoria in quanto non hanno il sistema<br />
+         ownership e borrowing.  </li>
+</ul>
+<h3 id="commentare-il-codice">Commentare il codice<a class="headerlink" href="#commentare-il-codice" title="Permanent link"></a></h3>
+<ul>
+<li>Commenti su riga      //</li>
+<li>Commenti multilinea   /**/</li>
+<li>Commenti per la documentazione  ///  che sono utili per le funzioni le strutture ed i moduli<br />
+         per spiegare come utilizzarli e con l&rsquo;utility rustdoc genero la documentazione Html. </li>
+</ul>
+<h2 id="1-le-prime-basi">1 Le prime basi<a class="headerlink" href="#1-le-prime-basi" title="Permanent link"></a></h2>
+<pre><code>  Rust utilizza **ownership** che permette di sapere chi possiede una risorsa in ogni 
+  momento evitando i problemi dell'accesso concorrente.  
+  FFI Foreign Function Interface che permette l'integrazione  con C e C++ quindi permette si  
+  di scrivere codice sicuro, ma anche senza sacrificare la flessibilita sia per i progetti  
+  nuovi e per quelli gia avviati.
+</code></pre>
+<h3 id="cargo-e-la-sintassi-di-base">Cargo e la sintassi di base<a class="headerlink" href="#cargo-e-la-sintassi-di-base" title="Permanent link"></a></h3>
+<p>Strumenti  di gestione dei paccjhetti e il build sistem per rust e gestisce tutto il ciclo<br />
+   di vita dall&rsquo;inizio dello svilupp fino alla distribuzione.
+   * cargo new primo_progetto 
+         crea un nuovo progetto con questo schema
+            primo_progetto 
+            ├── Cargo.toml       = Il file Cargo.toml contiene i metadati del progetto e la lista delle dipendenze.
+            └── src 
+                └── main.rs<br />
+   * cargo test 
+      * test
+         Compila il progetto, esegue i test definiti e mostra i risultati. 
+            Puoi utilizzare cargo test  che compila il progetto ed esegure i test definiti e mostra<br />
+            risultati.
+               * use             = importa i moduli e le funzionalità specifiche da librerie esterne o interne.<br />
+               * main            = punto di ingresso dell&rsquo;applicazione che non accetta argomenti per default<br />
+                                    ma puo essere utilizzata.
+               * mut             = le variabili sono immutabili per default salvo con l&rsquo;utilizzo di mut.<br />
+                  esempio:  </p>
+<pre><code>                    fn main() { 
+                        let messaggio = "Ciao, mondo!"; // Variabile immutabile 
+                        println!("{}", messaggio); // Stampa sulla console
+
+                        let mut numero = 42; // Variabile mutabile 
+                        numero = 43; // È possibile modificarla 
+                        println!("Il numero è {}", numero); 
+                    } 
+  * cicli ripetuti  = if,else, loop, while e for  ..
+  * Result  e  Option.
+           permette la gestione sicura degli errori; esempio funzione che restituiscono un  
+           Result che viene gestito con un match oppure utilizzanto :
+                 - unwrap(), .expect(); oppure l'operatore ? per propgare l'errore; esempio
+
+                     fn main() { 
+                        let risultato = divisione(10, 2);
+
+                        match risultato { 
+                            Ok(valore) =&gt; println!("Risultato: {}", valore), 
+                            Err(e) =&gt; println!("Errore: {}", e), 
+                        } 
+                    }
+
+                    fn divisione(a: i32, b: i32) -&gt; Result&lt;i32, String&gt; { 
+                        if b == 0 { 
+                            Err(String::from("Divisione per zero")) 
+                        } else { 
+                            Ok(a / b) 
+                        } 
+                    } 
+  * mod    = moduli 
+        rust puo organizzare il codice  in moduli  per suddividere il codice in  parte  
+        piu piccolo e gestibili, possono definiti nello stesso file e su file diversi e
+        resi pubblici mediante pub.
+
+
+                 mod calcoli { 
+                     pub fn somma(a: i32, b: i32) -&gt; i32 { 
+                         a + b 
+                     } 
+                 }
+
+                 fn main() { 
+                     let risultato = calcoli::somma(5, 3); 
+                     println!("Il risultato della somma è: {}", risultato); 
+                 } 
+  * use std::io 
+        Partiamo con use std::io per importare le funzionalità di input/output. La funzione 
+        main legge un numero dall'utente, lo converte da stringa a intero e lo valuta con 
+        una struttura if. Il programma gestisce eventuali errori durante la lettura dell'input   
+        o la conversione del numero, utilizzando .expect() per fornire messaggi di errore   
+        chiari in caso di fallimento.
+  * ownership
+        sistema che gestisce la memoria in modo sicuro ogni valore spetta al proprietario 
+        e quando esce dall'ambito (scope) viene automaticamente deallocato ed in questo modo
+        elimina la garbace collection e previene i bug.
+  * borrowing 
+        permette di prestare una variabile senza trasferirne la proprieta sia con prestito
+        MUTABILE che IMMUTABILE.
+           ESEMPIO:
+              fn main() { 
+                  let s = String::from("ciao"); 
+                  prendi_ownership(s); // Ownership trasferita 
+                  // Non possiamo più usare `s` qui
+
+                  let x = 10; 
+                  prendi_in_prestito(&amp;x); // `x` viene preso in prestito, ownership non trasferita 
+                  // Possiamo ancora usare `x` qui 
+                 }
+
+              fn prendi_ownership(s: String) { 
+                  println!("{}", s); 
+              }
+
+              fn prendi_in_prestito(y: &amp;i32) { 
+                  println!("{}", y); 
+              } 
+  * use
+     serve per importare  
+        - i moduli                       = interi moduli o sottosezioni di essi;
+        - le funzioni, strutture e tipi  = specifici elementi di un modulo  
+        - Enum e varianti                = tipi di enum e loro varianti
+        - Elementi di un modulo standard o di librerie esterne 
+              puoi accedere alle funzionalita delle librerie standard di terze parti.
+              ed un esempio la libreria st ricca di moduli.
+        - Vedi esempio con l'utilizzo di std::io  che gestisce l'imputo e l'output  
+              della tastiera e lo schermo e fornisce gli strumenti per la gestione 
+              dei flussi stream i/o e gestione errori.
+          Vedi In io::stdin  legge  una  linea  di  input  dall'utente
+
+        - Vedi  std::fs: fornisce funzionalità per lavorare con il file system,  
+        - 
+        - Vedi  std::collection: fornisce strutture dati utili come HashMap, Vec, BTreeMap  
+              strutture  dati  fondamentali  per  organizzare  e  gestire  le  collezioni  in  
+              modo efficiente:
+
+        - Vedi  std::thread: gestisce la concorrenza con i thread
+        - Vedi  std::async : per la sincronizzazione dei thread
+        - Vedi  std::time  : per gestire il tempo e le durate temporali.
+        - Vedi  std::env   : interagisco con l'ambiente di sistema come le variabili 
+                          - di ambiente
+        - 
+              vedi i progetti  :
+              progetto ----&gt; @std@io           = gestisce input output
+              progetto ----&gt; @std@in           = in attesa di leggere linea input
+              progetto ----&gt; @std@fs           = file system
+              progetto ----&gt; @std@fcollection  = gestione strutture dati
+              progetto ----&gt; @std@thread       = migliora le prestazioni con i thread
+              progetto ----&gt; @std@async.04?    = sincronizzazione dei thread con Mutex e Arc
+              progetto ----&gt; @std@time.05?     = misura la durata delle operazioni
+              progetto ----&gt; @std@env.06?      = misura la durata delle operazioni
+
+
+
+     use strumento performante
+        La  dichiarazione  use  è  uno  strumento  performante  che  semplifica  l'accesso  alle 
+        funzionalità  dei  moduli.  Che  si  tratti  di  leggere  input,  lavorare  con  file,  utilizzare 
+        strutture  dati  avanzate  o  gestire  la  concorrenza,  Rust  offre  una  vasta  gamma  di 
+        moduli standard accessibili tramite questa istruzione.
+        Ciò permette di mantenere il codice organizzato e pulito, evitando ripetizioni inutili.
+
+        Questo è l'elenco degli strumenti  potenti  per  gestire  I/O,  dati,  concorrenza,  
+        sincronizzazione,  e temporizzazione:
+        +-------------------+-------------------------------+-------------------------------------------------------------+
+        | Modulo            | Classi / Funzioni             | Descrizione                                                 |
+        +-------------------+-------------------------------+-------------------------------------------------------------+
+        | std::io           | stdin, stdout, Read, Write    | Gestisce l'I/O; lettura e scrittura da/verso flussi.       |
+        | std::fs           | File, read_to_string, write   | Interazione con il file system; leggere/scrivere file.      |
+        | std::collections  | HashMap, Vec, BTreeMap        | Strutture dati come mappe hash, vettori e alberi.           |
+        | std::thread       | spawn, JoinHandle             | Concorrenza tramite thread per esecuzione parallela.        |
+        | std::sync         | Mutex, Arc, RwLock            | Sincronizzazione e accesso sicuro a risorse condivise.      |
+        | std::time         | Duration, Instant             | Tempo e durate temporali; utile per timeout e misurazioni.  |
+        | std::env          | args, var, set_var            | Interazione con ambiente di sistema (argomenti/env).        |
+        | std::net          | TcpListener, TcpStream,       | Funzionalità di rete per TCP e UDP.                         |
+        |                   | UdpSocket                     |                                                             |
+        | std::process      | Command, exit, Child          | Esecuzione di processi esterni e comandi di sistema.        |
+        | std::cmp          | min, max, Ordering            | Funzioni e tipi per confronto e ordinamento.                |
+        | std::option       | Option                        | Rappresenta un valore opzionale (presente o assente).       |
+        | std::result       | Result                        | Gestione di successo o errore nelle operazioni.             |
+        +-------------------+-------------------------------+-------------------------------------------------------------+
+
+
+   Rust linguaggio sicuro 
+     è progettato per il codice sicuro privo di errori nella gestione della memoria come ad
+     esempio: dangling pointer
+        (Un dangling pointer (in italiano: puntatore pendente o appeso) 
+        è un puntatore che fa riferimento a una zona di memoria non 
+        più valida o deallocata. Usarlo può causare crash, 
+        comportamento indefinito o vulnerabilità di sicurezza.)
+
+           es.
+
+           int* p;
+              {
+                  int x = 42;
+                  p = &amp;x; // p punta a x
+              } // x non esiste più: p ora è dangling!
+              printf("%d", *p); // ERRORE: accesso a memoria invalida
+
+        🔥 Conclusione
+           Un dangling pointer è un pericolo nei linguaggi che non gestiscono la memoria in modo sicuro.
+           In Rust, non può succedere a meno che tu usi unsafe.
+           Il sistema di ownership + lifetimes lo impedisce a compile time, proteggendo il tuo programma.
+     Quando si tratta di mutuo accesso ai dati in ambienti concorrenti, Rust introduce 
+     un meccanismo di borrowing e reference counting che garantisce che due parti del 
+     codice non possano accedere mutualmente e simultaneamente ai dati in modo che 
+     possa  causare  conflitti
+     Previene il race conditions,
+          linguaggio  assicura  che  un  dato  non  possa essere mutato mentre 
+          viene letto da altre parti del programma
+  Protezione lifetime e delle reference
+     cioè è il compilatore che individua e traccia chi sta accedendo a cosa e per quanto tempo.
+     inoltre estende la protezione anche alle operazioni concorrenti e cioè eseguire delle 
+     operazioni in parellelo senza  preoccupazione di deallocare la memoria oppure che si
+     creano race conditions = dati lette mutato da altri.
+     La programmazione asincrona è sicura in quanto perche utilizza
+        Un task asincrono è un'unità di lavoro che può sospendersi e riprendere più tardi, senza bloccare il thread.
+        Ti permette di scrivere codice che fa "altro" mentre aspetta (es. attende dati dalla rete, un file, un timer…).
+        Viene gestito da una runtime asincrona (come tokio o async-std in Rust), che programma i task in modo efficiente.
+        Cos'è un Future? = Un Future è un oggetto che rappresenta il risultato di un'operazione asincrona che 
+        non è ancora disponibile, ma lo sarà in futuro.
+</code></pre>
+<h3 id="scope-delle-variabili">Scope delle variabili<a class="headerlink" href="#scope-delle-variabili" title="Permanent link"></a></h3>
+<p>todo : da finire</p>
+<h3 id="le-costanti-e-le-variabili">Le costanti e le variabili<a class="headerlink" href="#le-costanti-e-le-variabili" title="Permanent link"></a></h3>
+<p>Le costanti mantengono i loro valori immutabili. Le variabili consentono la<br />
+   la memorizzazione e la manipolazione dei dati.<br />
+   Pag. 38 - Sia le COSTANTI che le VARIABILI sfruttano la memoria RAM e cessano al termine<br />
+   delle&rsquo;esecuzione salvo in cui sono salvata su dispositivi esterni.<br />
+   Let = parola chiave di dichiarazione e di default immutabili salvo se necesario per cambiare valore occorre<br />
+   la parola chiame: mut<br />
+         es. immutabile
+            let x = 5; 
+            println!(&ldquo;Il valore di x è: {}&rdquo;, x);<br />
+         es. MUTABILE<br />
+                let mut y = 10; //DICHIARATA 10 MA MUTABILE
+                println!(&ldquo;Il valore iniziale di y è: {}&rdquo;, y); 
+                y = 20; //ASSEGNO NUOVO VALORE
+                println!(&ldquo;Il valore modificato di y è: {}&rdquo;, y);<br />
+   Le costanti dichiarate con const sono empre immutabili. Rispetto alle variabili le costanti devono avere sempre<br />
+      il tipo dichiarato  e possono essere utilizzate ovuncque nel programma; es   const MAX_PUNTI: u32 = 100_000;  <br />
+      MAX_PUNTI = valore massimo dichiarato come u32. <br />
+   shadowing = consente di riutilizzare il nome della variabile in uno scope successivo quindi utile quando si ha<br />
+      bisogno di trasformare il valore della variabile SENZA MODIFICARNE IL TIPO O LA MUTABILITA.<br />
+      Con shadowing una nuova variabile con lo stesso nome viene creata nascondente la precedente es.<br />
+            let z = 6; 
+            let z = z + 1;       //shadowing della variabile con lo stesso nome aumenta di valore<br />
+            let z = z * 2;       //shadowing della variabile con lo stesso nome aumenta di valore * 2 fino a 14
+            Il compilatore capisce che z è dello stesso tipo.  </p>
+<pre><code>        ATTENZIONE che quando necessario è megli dichiare il tipo:   let a: f64 = 3.14;  // dichiarazione di una variabile di tipo floating point  
+        la corretta tipizzazione delle variabili rende i codice Rust sicuro.
+</code></pre>
+<h3 id="tipologia-delle-variabili">Tipologia delle variabili<a class="headerlink" href="#tipologia-delle-variabili" title="Permanent link"></a></h3>
+<p>PAG 40 - Le variabili sono contenitori che consentono ai programmatori di memorizzare e manipolare di dati durante l&rsquo;esecuzione<br />
+del programma; ed in base al tipo associato, si stabilisce il valore che puo essere manipolato. In Rust le variabili sono divise<br />
+in tipologie per consentire al compilatore di eseguire controlli in sicurezza ed ottimizzazioni; le tipologie sono:<br />
+   * <strong>Tipi scalari</strong>: sono variabili che rappresentano il numero INTERO, VIRGOLA MOBILE, BOOLEANO e UN CARATTERE
+      let intero: i32 = 42;         // i32, u32, i64
+      let float: f64 = 3.14;        // Virgola mobile f32 f64
+      let booleano: bool = true;<br />
+      let carattere: char = &lsquo;R&rsquo;;<br />
+   * <strong>Tipi composti</strong>: sono variabili che rappresentano il numero INTERO, VIRGOLA MOBILE, BOOLEANO e UN CARATTERE</p></article></body></html>

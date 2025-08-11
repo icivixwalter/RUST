@@ -1,0 +1,9 @@
+{
+  "formula": "M = P * (1 + r/360)^{nt}",
+  "parametri": {
+    "capitale": 10000.0,
+    "tasso": 0.04,
+    "giorni": 430.0
+  },
+  "risultato": 10001.32717483001
+}

@@ -1,0 +1,13 @@
+/* PROGETTO DI GESTIONE DEI THREAD
+
+   @std@thread_(gestisce la concorrenza con i thread)
+
+
+*/
+
+
+fn main() {
+     println!("PROGETTO DI GESTIONE DELLA LIBRERIA STD::Th!");
+
+    println!("Hello, world!");
+}

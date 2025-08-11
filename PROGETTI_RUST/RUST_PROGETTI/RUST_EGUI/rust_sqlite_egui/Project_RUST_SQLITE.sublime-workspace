@@ -1,0 +1,545 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Project_RUST_SQLITE.sublime-project",
+			"settings":
+			{
+				"buffer_size": 109,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAACEAAAAAAAAAYQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAhAAAAAAAAACEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"BwAAAGAAAAAAAAAAYQAAAAAAAAABAAAAXE8AAAAAAAAAUAAAAAAAAAABAAAAXEUAAAAAAAAARgAAAAAAAAABAAAAXDcAAAAAAAAAOAAAAAAAAAABAAAAXDIAAAAAAAAAMwAAAAAAAAABAAAAXCgAAAAAAAAAKQAAAAAAAAABAAAAXCMAAAAAAAAAJAAAAAAAAAABAAAAXA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAcAAAAjAAAAAAAAACQAAAAAAAAAAAAAAAAA8L8oAAAAAAAAACkAAAAAAAAAAAAAAAAA8L8yAAAAAAAAADMAAAAAAAAAAAAAAAAA8L83AAAAAAAAADgAAAAAAAAAAAAAAAAA8L9FAAAAAAAAAEYAAAAAAAAAAAAAAAAA8L9PAAAAAAAAAFAAAAAAAAAAAAAAAAAA8L9gAAAAAAAAAGEAAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"termin",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"open defalu",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"TEM",
+				"Terminus: Open Default Shell in Panel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 124.0,
+		"history":
+		[
+			"DIR"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_EGUI/rust_sqlite_egui"
+	],
+	"file_history":
+	[
+		"/home/valter/CASA/PROGRAMMI/RUST/rust_sqlite/src/ui/app_ui.rs",
+		"/home/valter/CASA/CARTELLACONDIVISA/RUST/RUST_PURO_CALCOLO_INTERESSI-main/PROCEDURA_CALCOLO/Risultato_calcolo.json",
+		"/home/valter/.cache/.fr-d8rkSG/lapce-nightly/lapce-proxy/Cargo.toml",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/PROCEDURA_CALCOLO/Risultato_calcolo.json",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_json/Cargo.toml",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html_(nonFunziona)/Cargo.toml",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html_(nonFunziona)/src/main.rs",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html_(nonFunziona)/src/lib.rs",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi/src/main.rs",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/www/index.html",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/src/main.rs",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/www/main.json",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/www/intex.html",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/src/lib.rs",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/FORM_CALCOLI.HTML",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_json/src/main.rs",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/PROCEDURA_CALCOLO/dati.json",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/PROCEDURA_CALCOLO/dati.txt",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_html/Cargo.toml",
+		"/C/CASA/LINGUAGGI/RUST_PROGETTI/RUST_PURO/RUST_PURO_CALCOLO_INTERESSI/calcolo_interessi_json/src/main_FUNZIONANTE.MD",
+		"/home/valter/CASA/CARTELLACONDIVISA/RUST/RUST_CALCOLO_INTERESSI/calcolo_interessi_json/src/main.rs",
+		"/home/valter/calcolo_interessi/REDME.MD",
+		"/home/valter/CASA/CARTELLACONDIVISA/RUST/RUST_CALCOLO_INTERESSI/calcolo_interessi_json/Cargo.toml",
+		"/home/valter/CASA/CARTELLACONDIVISA/RUST/RUST_CALCOLO_INTERESSI/calcolo_interessi_json/dati.json",
+		"/home/valter/calcolo_interessi/src/main.rs",
+		"/home/valter/CASA/LINGUAGGI/UBUNTU/UBUNTU_TUTORIAL.md",
+		"/home/valter/CASA/ADUNANZE/STUDI_ADUNANZE.tex",
+		"/home/valter/CASA/CARTELLACONDIVISA/RUST/DIPENDENTI.csv",
+		"/home/valter/Programmi/RustRover-233.10527.39/Install-Linux-tar.txt",
+		"/home/valter/.config/sublime-text/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/home/valter/CASA/ADUNANZE/STUDI_ADUNANZE.aux",
+		"/home/valter/prova.txt",
+		"/home/valter/Scaricati/sublime-text_build-4152_amd64.deb",
+		"/home/valter/untitled"
+	],
+	"find":
+	{
+		"height": 40.8
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\",
+			"@1_FRAME = inizializza il frame con le grandezze x,y + altro",
+			"@3_FRAME_OPTION",
+			"@3_FRAME = inizializza il frame con le grandezze x,y + altro",
+			"//@3_FRAME = inizializza il frame con le grandezze x,y + altro",
+			"@1_FRAME",
+			"@come",
+			"@SUBLIME",
+			"@shell",
+			"aggiorna",
+			"@aggiorna",
+			"denaro",
+			"regno di dio",
+			"seme",
+			"mostrero",
+			"ebrei",
+			"ebbrei",
+			"RIBBELLIONE",
+			"@portafuoco",
+			"@mormorio",
+			"@Cora",
+			"numeri",
+			"ebrei",
+			"tetto",
+			"gocciolare",
+			"pazienza",
+			"accorto",
+			"@sentieri",
+			"proverbi",
+			"@superbo",
+			"ecclesiaste",
+			"pazienti",
+			"pazienza",
+			"salmo",
+			"si acconta",
+			"accontentarsi",
+			"accontentatevi",
+			"@prestiti",
+			"proverbi",
+			"ecclesiate",
+			"ecl",
+			"ESODO",
+			"esodo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"RIBELLIONE"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Project_RUST_SQLITE.sublime-project",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							],
+							[
+								41,
+								41
+							],
+							[
+								51,
+								51
+							],
+							[
+								56,
+								56
+							],
+							[
+								70,
+								70
+							],
+							[
+								80,
+								80
+							],
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										98,
+										99
+									],
+									"2":
+									[
+										98,
+										99
+									],
+									"3":
+									[
+										98,
+										99
+									],
+									"4":
+									[
+										98,
+										99
+									],
+									"5":
+									[
+										98,
+										99
+									],
+									"6":
+									[
+										98,
+										99
+									],
+									"7":
+									[
+										98,
+										99
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"2":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"3":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"4":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"5":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"6":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									],
+									"7":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										32,
+										33
+									],
+									"2":
+									[
+										32,
+										33
+									],
+									"3":
+									[
+										32,
+										33
+									],
+									"4":
+									[
+										32,
+										33
+									],
+									"5":
+									[
+										32,
+										33
+									],
+									"6":
+									[
+										32,
+										33
+									],
+									"7":
+									[
+										32,
+										33
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"rainbow_checked": true,
+							"syntax": "Packages/JSON/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 241.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 120.0
+	},
+	"output.Terminus 3":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "Project_RUST_SQLITE.sublime-project",
+	"replace":
+	{
+		"height": 52.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/CASA/LINGUAGGI/SUBLIMETEXT/SUBLIMETEXT.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 408.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

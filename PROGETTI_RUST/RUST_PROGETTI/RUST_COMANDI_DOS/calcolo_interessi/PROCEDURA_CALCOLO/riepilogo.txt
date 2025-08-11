@@ -1,0 +1,3 @@
+Formula: M = P * (1 + r/360)^{nt}
+Parametri: Parametri { capitale: 10000.0, tasso: 0.04, giorni: 430.0 }
+Risultato: 10001.32717483001

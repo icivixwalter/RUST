@@ -1,0 +1,18 @@
+/* IMPORTO LA LIBRERIA std::io ma utilizzo 
+        std:
+
+*/
+
+
+use std::io::{self, Write};
+
+fn main() {
+
+    println!("PROGETTO DI GESTIONE DELLA LIBRERIA STD::In!");
+
+    let mut input = String::new();
+    print!("Inserisci il tuo nome: ");
+    io::stdout().flush().unwrap();  // Forza la stampa immediata
+    io::stdin().read_line(&mut input).expect("Errore nella lettura");
+    println!("Ciao, {}!", input.trim());
+}

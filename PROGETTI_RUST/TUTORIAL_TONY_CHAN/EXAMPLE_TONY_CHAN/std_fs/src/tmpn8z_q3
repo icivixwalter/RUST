@@ -1,0 +1,24 @@
+/* IMPORTO LA LIBRERIA PER LA GESTIONE DEL FILE SYSTEM std::fs
+ fornisce funzionalità per lavorare con il file system, come strumenti per
+la  lettura  e  scrittura  di  file,  la  gestione  dei  percorsi,
+la  creazione  di  directory,  e
+altre operazioni correlate ai file direttamente dal codice:
+
+    @std@fs_(strumenti per la gestione del file system)
+*/
+
+use std::fs;            //gestione del file system
+
+fn main() {
+    println!("PROGETTO PER !");
+
+      // Scrive una stringa in un file 
+    fs::write("output.txt", "Ciao, mondo!").expect("Impossibile scrivere nel file"); 
+ 
+    // Legge il contenuto di un file 
+    let contenuto = fs::read_to_string("output.txt").expect("Impossibile leggere il file"); 
+ 
+    println!("Contenuto del file: {}", contenuto); 
+
+
+}

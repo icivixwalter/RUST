@@ -1,0 +1,82 @@
+/* PROGETTO DI GESTIONE DELLA SINCRONIZZAZIONE DEI THREAD
+- std::sync: offre strumenti per la sincronizzazione tra thread, come Mutex e Arc.
+Questi consentono di condividere dati tra thread in modo sicuro, prevenendo race
+conditions e altri problemi comuni nella programmazione concorrente
+
+
+   @std@async_(esempio di programmazione concorrente con Mutex ed Arc)
+
+
+*/
+
+
+use std::thread;
+use std::time::Duration;
+
+/*
+Utilizziamo  Mutex  per  garantire  l'accesso  sicuro  a  un  contatore  condiviso  tra  più
+thread. Mentre con Arc gestiamo il contatore in maniera sicura e condivisa.
+*/
+fn main() {
+    // ===========================
+    // PRIMA PARTE - ESECUZIONE CON THREAD
+    // ===========================
+
+     println!("PROGETTO DI GESTIONE DELLA LIBRERIA STD::Async!");
+
+    // Creazione di un nuovo thread con thread::spawn
+    println!("Cr");
+    let handle = thread::spawn(|| {
+        // Questo thread esegue un ciclo e stampa un messaggio
+        for i in 1..5 {
+            println!("Ciao dal thread secondario! {}", i);
+            thread::sleep(Duration::from_millis(50));
+        }
+    });
+
+    // Nel frattempo, il thread principale fa qualcos'altro
+    for i in 1..5 {
+        println!("Ciao dal thread principale! {}", i);
+        thread::sleep(Duration::from_millis(50));
+    }
+
+    // Attende che il thread secondario termini
+    handle.join().unwrap();
+
+    // ===========================
+    // SECONDA PARTE - CONDIVISIONE DATI CON Arc + Mutex
+    // ===========================
+
+    use std::sync::{Arc, Mutex};
+
+    // Arc consente di condividere dati tra più thread in sicurezza
+    // Mutex assicura che solo un thread per volta possa accedere/modificare il dato
+    let contatore = Arc::new(Mutex::new(0));
+
+    // Vettore per conservare tutti gli handle dei thread
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        // Cloniamo l'Arc per passare una copia al thread
+        let contatore = Arc::clone(&contatore);
+
+        // Ogni thread incrementa il valore all'interno del Mutex
+        let handle = thread::spawn(move || {
+            // Acquisisce il lock sul Mutex
+            let mut num = contatore.lock().unwrap();
+            *num += 1; // Incrementa il contatore
+            // Il lock viene rilasciato automaticamente alla fine dello scope
+        });
+
+        // Salviamo l'handle per poter fare join più tardi
+        handles.push(handle);
+    }
+
+    // Aspettiamo che tutti i thread finiscano
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    // Stampiamo il risultato finale
+    println!("Risultato: {}", *contatore.lock().unwrap());
+}

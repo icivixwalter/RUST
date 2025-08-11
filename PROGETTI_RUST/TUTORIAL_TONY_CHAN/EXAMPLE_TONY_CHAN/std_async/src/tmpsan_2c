@@ -1,0 +1,194 @@
+/* PROGETTO DI GESTIONE DELLA SINCRONIZZAZIONE DEI THREAD
+- std::sync: offre strumenti per la sincronizzazione tra thread, come Mutex e Arc.
+Questi consentono di condividere dati tra thread in modo sicuro, prevenendo race
+conditions e altri problemi comuni nella programmazione concorrente
+
+async è sinonomi di concorrenza:
+
+"Concorrenza con thread"
+
+"Uso di Mutex e Arc per sincronizzazione"
+
+"Parallelo con std::thread"
+
+   @std@async_(esempio di programmazione concorrente con Mutex ed Arc)
+
+
+@std@async.04?
+
+==============================================================================================================
+Sì, esattamente! ✅ In Rust, .unwrap() può essere utilizzato sia con
+    Result<T, E> che con Option<T>,
+e funziona in modo simile in entrambi i casi:
+ RESULT
+.1. .unwrap() su Result<T, E>
+    Chiama .unwrap() quando sei sicuro che il risultato è Ok(T), e vuoi ottenere il valore direttamente.
+         Ma se il valore è Err(E), .unwrap():
+        fa panic (cioè il programma si blocca)
+        e stampa il messaggio dell’errore contenuto in Err
+    esempio:
+                use std::fs::File;
+                fn main() {
+                    // Prova ad aprire un file
+                    let file_result = File::open("dati.txt");
+
+                    // Usa unwrap per ottenere il file se esiste
+                    let file = file_result.unwrap();  // <-- qui si ottiene il file, o panic se non trovato
+                    println!("File aperto correttamente: {:?}", file);
+                    }
+
+            ▶️ Possibili casi:
+                File dati.txt esiste?   file_result è...    .unwrap() fa...
+                ✅ Sì    Ok(File)    Ritorna il File
+                ❌ No    Err(e)  Fa panic + stampa messaggio dell'errore
+
+
+            ✅ Come evitare il panic?
+                Meglio usare .expect("spiegazione") oppure match:
+                    .expect(): messaggio di errore personalizzato
+                        let file = File::open("dati.txt").expect("Impossibile aprire il file dati.txt");
+
+                oppure utilizzare il match: controllo esplicito
+                    let file_result = File::open("dati.txt");
+
+                        match file_result {
+                            Ok(file) => println!("Aperto: {:?}", file),
+                            Err(e) => println!("Errore: {}", e),
+                        }
+
+
+            | Tipo     | Casi possibili | Scopo                        | `.unwrap()` panica se... |
+            | -------- | -------------- | ---------------------------- | ------------------------ |
+            | `Option` | `Some`, `None` | Presenza o assenza di valore | È `None`                 |
+            | `Result` | `Ok`, `Err`    | Successo o fallimento        | È `Err(E)`               |
+
+            💡 Riassunto
+                    Result = usato per gestire errori (es. I/O, parsing, rete...)
+                    .unwrap() ottiene il valore di Ok, ma panica se Err
+                    Preferibile usare expect o match per gestire elegantemente i casi di errore
+
+
+OPTION
+     2. .unwrap() su Option<T>
+      🔹 1. .unwrap() su Option<T>
+        Comportamento:
+
+            Se è Some(val), .unwrap() restituisce val.
+            Se è None, il programma va in panic.
+
+            esempio:
+                let maybe_name = Some("Mario");
+                let name = maybe_name.unwrap(); // restituisce "Mario"
+
+                let empty: Option<i32> = None;
+                let num = empty.unwrap(); // ❌ panic: called `Option::unwrap()` on a `None` value
+
+    🧠 A cosa serve Option<T>?
+        Option viene usato per rappresentare un valore che
+        potrebbe non esistere.
+        Esempi pratici:
+            1. Cercare qualcosa in una collezione:
+                let numeri = vec![10, 20, 30];
+                    let x = numeri.get(1); // restituisce Option<&i32>
+
+                    match x {
+                        Some(valore) => println!("Trovato: {}", valore),
+                        None => println!("Elemento non trovato!"),
+                    }
+
+            2. Conversione stringa → numero:
+                let testo = "123";
+                let numero: Option<i32> = testo.parse().ok(); // restituisce Option<i32>
+
+                match numero {
+                    Some(n) => println!("Numero: {}", n),
+                    None => println!("Errore di parsing"),
+                }
+
+            ✅ Quando usare Option<T>
+
+            Ogni volta che:
+
+                Il valore potrebbe essere assente
+
+                La funzione non può garantire che restituirà qualcosa
+                    Utilizziamo
+                Esempio funzione personalizzata:
+                    fn cerca_pari(v: &[i32]) -> Option<i32> {
+                            for &n in v {
+                                if n % 2 == 0 {
+                                    return Some(n);
+                                }
+                            }
+                            None
+                        }
+
+            ✅ Conclusione
+            Option<T> = Some(T) | None
+                è un modello mentale, non codice da scrivere direttamente.
+                Serve a capire che un valore può esistere (Some) o mancare (None).
+                È molto usato in Rust per scrivere codice sicuro senza usare null.
+
+Nel programma viene inoltre utilizzato:
+        Mutex  per  garantire  l'accesso  sicuro  a  un  contatore  condiviso  tra  più
+        thread.
+        Mentre con Arc gestiamo il contatore in maniera sicura e condivisa.
+==============================================================================================================
+
+*/
+
+
+
+
+// Importa Arc (Reference Counted) per condividere dati tra thread in modo sicuro,
+// Mutex per proteggere l'accesso concorrente ai dati,
+// e thread per creare ed eseguire thread separati.
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+fn main() {
+    // ===========================
+    // PRIMA PARTE - ESECUZIONE CON THREAD
+    // ===========================
+
+    // Stampa un messaggio di intestazione (nota: il nome "STD::Async" è solo nel messaggio,
+    // ma in realtà non viene usata async/await né librerie asincrone).
+    println!("PROGETTO DI GESTIONE DELLA LIBRERIA STD::Async!");
+
+    // Crea un contatore inizializzato a 0, protetto da Mutex
+    // e incapsulato in Arc per la condivisione sicura tra thread.
+    let contatore = Arc::new(Mutex::new(0));
+
+    // Vettore per memorizzare gli handle dei thread creati.
+    let mut handles = vec![];
+
+    // Crea 10 thread concorrenti.
+    for _ in 0..10 {
+        // Clona l'Arc per ottenere una nuova referenza condivisa al contatore.
+        let contatore = Arc::clone(&contatore);
+
+        // Crea un nuovo thread.
+        let handle = thread::spawn(move || {
+            // Ottiene il lock sul Mutex per accedere in modo sicuro al contatore.
+            let mut num = contatore.lock().unwrap();
+            println!("il l!");
+
+
+            // Incrementa il contatore di 1.
+            *num += 1;
+            // Il lock viene rilasciato automaticamente al termine dello scope.
+        });
+
+        // Salva l'handle del thread per poterlo aspettare più tardi.
+        handles.push(handle);
+    }
+
+    // Attende che tutti i thread terminino l'esecuzione.
+    for handle in handles {
+        handle.join().unwrap(); // join() blocca fino alla fine del thread.
+    }
+
+    // Dopo che tutti i thread hanno completato, stampa il valore del contatore,
+    // che dovrebbe essere 10 se tutti i thread hanno incrementato correttamente.
+    println!("Risultato: {}", *contatore.lock().unwrap());
+}
