@@ -287,7 +287,10 @@
 	"menu_visible": true,
 	"output.Terminus":
 	{
-		"height": 126.400001526
+		"height": 126.400001526,
+		"history":
+		[
+		]
 	},
 	"output.find_results":
 	{
