@@ -40,24 +40,38 @@ impl FileTime {
 #[cfg(test)]
 mod tests {
     use std::fs;
-
+    use chrono::{Datelike, Local};
     use super::*;
 
     #[test]
     fn test_mese_file() {
+
+
+        // Ottieni data e ora corrente
+        let now: DateTime<Local> = Local::now();
+
+        let mese_corrente = now.month(); // ritorna un u32 da 1 a 12
+
         let metadati = fs::metadata(".\\Cargo.toml").unwrap();
         let file_time = FileTime::new(metadati);
         let mese = file_time.get_mese();
         println!("mese trovato {}", &mese);
-        assert_eq!(mese, 6, "Test fallito perche non è il mese corrente");
+        assert_eq!(mese, mese_corrente as i32, "Test fallito perche non è il mese corrente");
     }
 
     #[test]
     fn test_anno_file() {
+
+        // Ottieni data e ora corrente
+        let now: DateTime<Local> = Local::now();
+
+        // Estrai anno e mese
+        let anno_corrente = now.year();
+
         let metadati = fs::metadata(".\\Cargo.toml").unwrap();
         let file_time = FileTime::new(metadati);
         let anno = file_time.get_anno();
         println!("anno trovato {}", &anno);
-        assert_eq!(anno, 2022, "Test fallito perche non è il mese corrente");
+        assert_eq!(anno, anno_corrente, "Test fallito perche non è il mese corrente");
     }
 }
