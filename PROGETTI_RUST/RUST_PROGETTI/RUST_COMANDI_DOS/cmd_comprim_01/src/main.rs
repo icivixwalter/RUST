@@ -94,7 +94,7 @@
 
 
 use file_time::FileTime;
-use std::{fs, io::Error, process::Command, path::Path};
+use std::{fs, io::Error, process::Command, path::Path, panic};
 
 use clap::Parser;
 
@@ -320,11 +320,13 @@ mod tests {
 
     use super::*;
 
+    /// comprimi_rar_test
+    /// salvo il cargo toml in path di arrivo e poi cancello il file.zip
      #[test]
     fn comprimi_rar_test() {
          // Wrappiamo il codice del test con `catch_unwind`
          let result = panic::catch_unwind(|| {
-             // Test 1: Creazione di "prova.zip"
+             // Test 1: Creazione di "salva_cargo.zip"
              ComprimiFile::comprimi_7zip("prova.zip", "Cargo.toml");
              let x = Path::new("prova.zip").exists();
              assert!(x, "test fallito il file .zip non esiste");
@@ -352,3 +354,50 @@ mod tests {
          }
     }
 }
+
+
+// test 2
+//-------------------------------------------------------------------------------------------//
+
+1
+#[test]
+fn comprimi_cartella_test() {
+    // Directory di partenza (già esistente nel progetto)
+    let input_directory = concat!(env!("CARGO_MANIFEST_DIR"), "/PathdiPartenza");
+
+    // Directory di destinazione (PathDiArrivo)
+    let output_directory = concat!(env!("CARGO_MANIFEST_DIR"), "/PathDiArrivo");
+
+    // Nome del file ZIP da creare nella directory di destinazione
+    let output_file = format!("{}/test_archivio.zip", output_directory);
+
+    // Verifica iniziale: controlla che la directory di partenza esista
+    assert!(
+        Path::new(input_directory).exists(),
+        "La directory PathdiPartenza non esiste nel progetto"
+    );
+
+    // Verifica iniziale: controlla che la directory di destinazione esista (altrimenti la crea)
+    if !Path::new(output_directory).exists() {
+        fs::create_dir(output_directory).expect("Non è stato possibile creare la directory di destinazione PathDiArrivo");
+    }
+
+    let result = panic::catch_unwind(|| {
+        // Comprimi tutti i file e directory di PathdiPartenza nell'archivio test_archivio.zip
+        ComprimiFile::comprimi_7zip(&output_file, input_directory);
+
+        // Verifica che l'archivio compresso sia stato creato
+        let x = Path::new(&output_file).exists();
+        assert!(x, "Test fallito: il file .zip non è stato creato nella directory di destinazione");
+    });
+
+    // Non cancelliamo più il file ZIP, lo lasciamo nella directory di destinazione
+
+    // Rilanciamo il panic se il test è fallito
+    if let Err(err) = result {
+        panic!("{:?}", err);
+    }
+
+    println!("File ZIP creato con successo: {}", output_file);
+}
+//-------------------------------------------------------------------------------------------//
