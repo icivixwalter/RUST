@@ -32,7 +32,7 @@
  [struct ComprimiFile]→ Range anni, percorsi, configurazione
  [new]                → Costruttore di ComprimiFile
  [esegui]             → Scansione, filtraggio anno/mese, chiamata compressione
- [comprimi_rar]       → Generazione ed esecuzione comando 7-Zip
+ [comprimi_7z]       → Generazione ed esecuzione comando 7-Zip
  [get_path_parent]    → Recupero nome cartella padre di un file
  [tests]              → Test automatici compressione e funzioni base
 
@@ -62,12 +62,12 @@
         │   ├─ Recupera metadati (FileTime)
         │   ├─ Estrae anno/mese ultima modifica
         │   ├─ Costruisce nome archivio:
-        │   │   "[DEST]\\[CARTELLA_PADRE]_[ANNO]_[MESE].rar"
+        │   │   "[DEST]\\[CARTELLA_PADRE]_[ANNO]_[MESE].7z"
         │   ├─ Confronta anno/mese con range consentito
-        │   └─ Se combacia → chiama [comprimi_rar]
+        │   └─ Se combacia → chiama [comprimi_7z]
         └─ Fine scansione
 
-[comprimi_rar]
+[comprimi_7z]
  ├─ Prepara comando "C:\Program Files\7-Zip\7z.exe"
  ├─ Imposta argomenti: "U -r -ac [NOME_ZIP] [FILE] -v1m"
  ├─ Stampa a video il comando generato (debug)
@@ -86,23 +86,16 @@
 */
 
 
-
-
-
-
-
-
-
-use file_time::FileTime;
+#[allow(unused_imports)]
 use std::{fs, io::Error, process::Command, path::Path, panic};
-
+use file_time::FileTime;
 use clap::Parser;
 
 //importare un tuo file
 mod file_time;
 
-
-//COSTANTI PATH ARRIVO E PARTENZA
+// COSTANTI PATH ARRIVO E PARTENZA
+// Questi file contengono i percorsi di input e output predefiniti
 const FILE_PARTENZA: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/resources/paths_Partenza.txt");
 const FILE_ARRIVO: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/resources/path_Arrivo.txt");
 
@@ -110,46 +103,22 @@ const FILE_ARRIVO: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/resources/path_A
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
 struct Argomenti {
-    // short: il parametro corto (-i), long: il parametro con nome completo --input-file-with-paths
+    // short: il parametro corto (-i), long: il parametro con nome completo --input-path
     #[clap(short = 'i', long)]
     input_path: String,
     #[clap(short = 'o', long)]
     output_path: String, // se il path non esiste lo crea
 }
 
-
-
 fn main() {
-    //******************************* aggiunto per i parametri */
-    //se da linea di comando inserisci -i e -o prende i valori
-    //dai parametri altrimenti prende quelli dai file .txt
-    //select case con 2 bracci
-
-
-    let _args = match Argomenti::try_parse() {
-        Ok(arg) => arg,
-        Err(_) => {
-
-
-            let x = fs::read_to_string(FILE_ARRIVO.to_string());
-            let y = fs::read_to_string(FILE_PARTENZA.to_string());
-
-
-            Argomenti {
-                input_path: y.unwrap(),
-                output_path: x.unwrap(),
-            }
-        }
-    }; // salva gli argomenti CLI in una nuova istanza della struct
-
-
-
-
+    //******************************* gestione dei parametri CLI o da file di configurazione */
+    // Prova a leggere i percorsi da linea di comando con -i e -o
+    // Se fallisce (nessun parametro fornito), legge i percorsi dai file .txt di configurazione
 
     let args = match Argomenti::try_parse() {
-        Ok(arg) => arg, // parametri passati da CLI
+        Ok(arg) => arg, // Parametri forniti da CLI
         Err(_) => {
-            // Leggi dai file di configurazione in modo sicuro
+            // Lettura sicura dai file di configurazione
             let input_path = fs::read_to_string(FILE_PARTENZA)
                .expect("Impossibile leggere il file di partenza");
             let output_path = fs::read_to_string(FILE_ARRIVO)
@@ -162,28 +131,18 @@ fn main() {
         }
     };
 
-
-
-
-
-
-
-
-
-
-    //***++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-    //03 istanzio la struct
+    // Istanzia l'oggetto che gestirà la compressione dei file
     let comprimi_file = ComprimiFile::new(&args.input_path, &args.output_path);
+
+    // Esegue la procedura di compressione
     match comprimi_file.esegui() {
         Ok(_) => (),
-        Err(err) => println!("errore : {}", err),
+        Err(err) => println!("Errore: {}", err),
     }
-    println!("fine procedura di compattamento rar!");
+    println!("Fine procedura di compattamento RAR!");
 }
 
-//01 creo una struct per i parametri
+// Struttura che memorizza i parametri della compressione
 struct ComprimiFile {
     anno_inizio: i32,
     anno_fine: i32,
@@ -191,106 +150,97 @@ struct ComprimiFile {
     path_destinazione: String,
 }
 
-//02 implentazione metodi della struttura comprimi
+// Implementazione dei metodi della struttura ComprimiFile
 impl ComprimiFile {
-    //metodo statico che diventa costruttore con new
-    //creando una istanza di ComprimiFile
+    /// Costruttore per creare un'istanza di ComprimiFile
     fn new(par_path_sorgente: &str, par_path_destinazione: &str) -> ComprimiFile {
         ComprimiFile {
             anno_inizio: 1950,
             anno_fine: 2050,
-            //to_owned() = significa la traduzione da &str in String
             path_sorgente: par_path_sorgente.to_owned(),
             path_destinazione: par_path_destinazione.to_owned(),
         }
     }
 
-    //II metodo esegui &self = richiede l'istanza comprimi file
-    // perche non è statico
+    /// Metodo principale che scansiona la cartella sorgente e comprime i file
     fn esegui(&self) -> Result<bool, Error> {
-        //for partendo dagli estremi anno inizio e fine del costruttore
 
+        //@modifica
+        // *** MODIFICA 1: Creazione del file di log ***
+        let log_file_path = format!("{}/log.txt", self.path_destinazione);
+        let mut log_file = fs::File::create(&log_file_path)
+           .expect("Non è stato possibile creare il file log.txt");
+
+
+
+
+        // Legge il contenuto della directory sorgente
         let cartella = fs::read_dir(&self.path_sorgente)?;
         for file in cartella {
             match file {
                 Ok(dir_entry) => {
-                    //la path del file corrente
+                    // Recupera i metadati del file
                     let file_metadata = dir_entry.metadata()?;
                     let istanza_file_time = FileTime::new(file_metadata);
-                    //destrutturazione di una tupla = assegna ad anno e al mese i due
-                    //valori recuperati dalla tupla istanza_file_time.get_anno_mese()
-                    let (anno, mese) = istanza_file_time.get_anno_mese();
-                    // TODO: aggiungere nome cartella genitore
-                    let nome_file_zip = format!("{}\\{}_{}_{:#02}.rar",self.path_destinazione, get_path_parent(&dir_entry.path()), anno, mese);
 
+                    // Ottiene anno e mese di creazione/modifica
+                    let (anno, mese) = istanza_file_time.get_anno_mese();
+
+                    // Nome del file compresso (RAR) con cartella padre, anno e mese
+                    let nome_file_zip = format!(
+                        "{}\\{}_{}_{:#02}.7z",
+                        self.path_destinazione,
+                        get_path_parent(&dir_entry.path()),
+                        anno,
+                        mese
+                    );
+
+                    // Confronta anno e mese con l'intervallo configurato
                     for anno_corrente in self.anno_inizio..=self.anno_fine {
                         for mese_corrente in 1..=12 {
                             if anno == anno_corrente && mese == mese_corrente {
-                                ComprimiFile::comprimi_7zip(&nome_file_zip, dir_entry.path().to_str().unwrap_or(""));
+                                ComprimiFile::comprimi_7zip(
+                                    &nome_file_zip,
+                                    dir_entry.path().to_str().unwrap_or("")
+                                );
                             }
                         }
                     }
                 }
-                Err(errore) => println!("errore di ricerca del file: {}", errore),
+                Err(errore) => println!("Errore nella lettura del file: {}", errore),
             }
         }
         Ok(true)
     }
 
-    /// La funzione serve per comprimere un archivio usando uno strumento esterno, ovvero 7z.exe, il quale è un eseguibile del programma 7-Zip installato nel percorso C:\Program Files\7-Zip\7z.exe.
-    ///
-    /// # Arguments
-    ///
-    /// * `par_nome_zip`: una stringa che rappresenta il nome del file ZIP di output.
-    /// * `par_nome_file_archivio`: una stringa che rappresenta il file o i file che devono essere compressi.
-    ///
-    /// returns: ()
-    ///
-    /// # Examples
-    ///
-    /// ```
-    ///
-    /// ```
+    /// Metodo che esegue la compressione utilizzando 7-Zip
     fn comprimi_7zip(par_nome_zip: &str, par_nome_file_archivio: &str) {
-        //istanzio il comando rar
-
+        // Percorso all'eseguibile 7-Zip
         let mut command = Command::new("C:\\Program Files\\7-Zip\\7z.exe");
 
-        //predispongo i successivi parametri di rar in un vettore
-        //     let argomenti = vec![
-        //     "U",
-        //     "-r",
-        //     "-ac",
-        //     par_nome_zip,
-        //     par_nome_file_archivio,
-        //     "-v1m",
-        // ];
-
+        // Argomenti per la creazione dell'archivio
         let argomenti = vec![
-            "a",               // Comando per aggiungere file/directory all'archivio
-            par_nome_zip,      // Nome del file di output (archivio)
-            par_nome_file_archivio, // File o directory da comprimere
+            "a",               // Comando "aggiungi"
+            par_nome_zip,      // Nome archivio di output
+            par_nome_file_archivio, // File o cartella da comprimere
         ];
 
-        // prende l'istanza del comando a cui aggiunge gli argomenti rar
         let command = command.args(&argomenti);
 
-
+        // Stampa del comando per debug
         let mut s: String = String::new();
         for arg in argomenti {
             s.push_str(arg);
             s.push(' ');
         }
+        println!("7z.exe {}", s);
 
-        println!("Rar.exe {}", s);
-        // Eseguiamo il comando
+        // Esecuzione del comando
         match command.output() {
             Ok(output) => {
-                // Controlliamo se il comando ha avuto successo
                 if output.status.success() {
                     println!("Archivio creato con successo: {}", par_nome_zip);
                 } else {
-                    // In caso di errore, stampiamo l'output per debugging
                     eprintln!(
                         "Errore durante la creazione dell'archivio:\n{}",
                         String::from_utf8_lossy(&output.stderr)
@@ -302,13 +252,21 @@ impl ComprimiFile {
             }
         }
     }
+
+
+
 }
 
-
-pub fn get_path_parent (path_file:&Path)->String{
-    let parent =Path::parent(path_file).unwrap();
+/// Funzione di utilità per ottenere il nome della cartella padre di un file
+pub fn get_path_parent(path_file: &Path) -> String {
+    let parent = Path::parent(path_file).unwrap();
     Path::file_name(parent).unwrap().to_str().unwrap().to_owned()
 }
+
+
+
+
+
 
 
 //          test
@@ -320,10 +278,10 @@ mod tests {
 
     use super::*;
 
-    /// comprimi_rar_test
+    /// comprimi_7z_test
     /// salvo il cargo toml in path di arrivo e poi cancello il file.zip
      #[test]
-    fn comprimi_rar_test() {
+    fn comprimi_7z_test() {
          // Wrappiamo il codice del test con `catch_unwind`
          let result = panic::catch_unwind(|| {
              // Test 1: Creazione di "salva_cargo.zip"
@@ -333,7 +291,7 @@ mod tests {
 
              // Test 2: Creazione di "prova2.zip"
              ComprimiFile::comprimi_7zip("prova2.zip", concat!(env!("CARGO_MANIFEST_DIR"), "/PathDiArrivo"));
-             let x = Path::new("prova2.zip.part01.rar").exists() || Path::new("prova2.zip").exists();
+             let x = Path::new("prova2.zip.part01.7z").exists() || Path::new("prova2.zip").exists();
              assert!(x, "test fallito il file .zip non esiste");
          });
 
@@ -344,8 +302,8 @@ mod tests {
          if Path::new("prova2.zip").exists() {
              fs::remove_file("prova2.zip").unwrap();
          }
-         if Path::new("prova2.zip.part01.rar").exists() {
-             fs::remove_file("prova2.zip.part01.rar").unwrap();
+         if Path::new("prova2.zip.part01.7z").exists() {
+             fs::remove_file("prova2.zip.part01.7z").unwrap();
          }
 
          // Rilanciamo il panic se il test è fallito
