@@ -359,7 +359,7 @@ mod tests {
 // test 2
 //-------------------------------------------------------------------------------------------//
 
-1
+
 #[test]
 fn comprimi_cartella_test() {
     // Directory di partenza (già esistente nel progetto)
