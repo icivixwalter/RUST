@@ -88,6 +88,7 @@
 
 #[allow(unused_imports)]
 use std::{fs, io::Error, process::Command, path::Path, panic};
+use std::io::Write;
 use file_time::FileTime;
 use clap::Parser;
 
@@ -110,6 +111,7 @@ struct Argomenti {
     output_path: String, // se il path non esiste lo crea
 }
 
+//@inizio@mains
 fn main() {
     //******************************* gestione dei parametri CLI o da file di configurazione */
     // Prova a leggere i percorsi da linea di comando con -i e -o
@@ -162,20 +164,20 @@ impl ComprimiFile {
         }
     }
 
-    /// Metodo principale che scansiona la cartella sorgente e comprime i file
     fn esegui(&self) -> Result<bool, Error> {
-
-        //@modifica
-        // *** MODIFICA 1: Creazione del file di log ***
+        // *** MODIFICA_01: Creazione del file di log ***
         let log_file_path = format!("{}/log.txt", self.path_destinazione);
         let mut log_file = fs::File::create(&log_file_path)
-           .expect("Non è stato possibile creare il file log.txt");
+           .expect("Impossibile creare il file log.txt");
 
-
-
+        // *** MODIFICA_02: Debug sulla scansione iniziale della directory ***
+        let log_messaggio = format!("Scansione della directory: {}\n", self.path_sorgente);
+        println!("{}", log_messaggio); // Visualizza sulla console
+        log_file.write_all(log_messaggio.as_bytes())?; // Registra nel log
 
         // Legge il contenuto della directory sorgente
         let cartella = fs::read_dir(&self.path_sorgente)?;
+
         for file in cartella {
             match file {
                 Ok(dir_entry) => {
@@ -186,7 +188,15 @@ impl ComprimiFile {
                     // Ottiene anno e mese di creazione/modifica
                     let (anno, mese) = istanza_file_time.get_anno_mese();
 
-                    // Nome del file compresso (RAR) con cartella padre, anno e mese
+                    // *** MODIFICA_03: Debug per ogni file trovato ***
+                    println!(
+                        "File trovato: {:?}, Anno: {}, Mese: {}",
+                        dir_entry.path(),
+                        anno,
+                        mese
+                    );
+
+                    // Costruisce il nome del file compresso
                     let nome_file_zip = format!(
                         "{}\\{}_{}_{:#02}.7z",
                         self.path_destinazione,
@@ -195,23 +205,59 @@ impl ComprimiFile {
                         mese
                     );
 
-                    // Confronta anno e mese con l'intervallo configurato
+                    // *** MODIFICA_04: Variabile per verificare se un file è stato processato ***
+                    let mut is_file_processed = false;
+
+                    // Controlla se il file rientra nei range specificati
                     for anno_corrente in self.anno_inizio..=self.anno_fine {
                         for mese_corrente in 1..=12 {
                             if anno == anno_corrente && mese == mese_corrente {
+                                // Comprimi il file
                                 ComprimiFile::comprimi_7zip(
                                     &nome_file_zip,
                                     dir_entry.path().to_str().unwrap_or("")
                                 );
+
+                                // *** MODIFICA_05: Debug per file processati ***
+                                let log_messaggio = format!(
+                                    "File processato: {:?}\n",
+                                    dir_entry.path()
+                                );
+                                println!("{}", log_messaggio); // Visualizza sulla console
+                                log_file.write_all(log_messaggio.as_bytes())?; // Registra nel log
+
+                                is_file_processed = true;
                             }
                         }
                     }
+
+                    // *** MODIFICA_06: Debug per file NON processati ***
+                    if !is_file_processed {
+                        let log_messaggio = format!(
+                            "File NON processato (fuori range): {:?}, Anno: {}, Mese: {}\n",
+                            dir_entry.path(),
+                            anno,
+                            mese
+                        );
+                        println!("{}", log_messaggio); // Visualizza sulla console
+                        log_file.write_all(log_messaggio.as_bytes())?; // Registra nel log
+                    }
                 }
-                Err(errore) => println!("Errore nella lettura del file: {}", errore),
-            }
-        }
-        Ok(true)
+                Err(errore) => {
+                    // Gestione errori durante la lettura del file
+                    let log_messaggio = format!("Errore nella lettura del file: {}\n", errore);
+                    println!("{}", log_messaggio); // Visualizza sulla console
+                    log_file.write_all(log_messaggio.as_bytes())?;
+                }
+            } // Fine del match
+        } // Fine del ciclo for sui file
+
+        Ok(true) // Restituisce il risultato se tutto è andato bene
     }
+    //*************************************************//
+
+
+
 
     /// Metodo che esegue la compressione utilizzando 7-Zip
     fn comprimi_7zip(par_nome_zip: &str, par_nome_file_archivio: &str) {
