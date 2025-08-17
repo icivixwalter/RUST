@@ -1,0 +1,7 @@
+
+//REPOSITORY ROOT
+https://github.com/icivixwalter/CASA
+
+
+//LINGUAGGI RUST
+     https://github.com/icivixwalter/RUST/tree/calcolo/PROGETTI_RUST
