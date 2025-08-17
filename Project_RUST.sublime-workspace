@@ -27,6 +27,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiArrivo/log.txt",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -119,10 +127,13 @@
 	"expanded_folders":
 	[
 		"/c/CASA/LINGUAGGI/RUST",
+		"/c/CASA/LINGUAGGI/RUST/GIT_BAT",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS",
-		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01"
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01",
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiArrivo",
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiPartenza"
 	],
 	"file_history":
 	[
@@ -258,6 +269,36 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiArrivo/log.txt",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
