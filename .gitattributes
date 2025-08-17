@@ -1,0 +1,57 @@
+# NOME FILE : .gitattributes
+#
+# Auto detect text files and perform CRLF normalization  -
+* text eol=crlf
+
+
+
+# REGOLE AGGIUNTE per avere ELIMINAR IL WARNING sui file di testo LF
+# dopo aver integrato con queste aggiunte occorre normalizzare i file applicando tali regole
+# con i seguenti comandi git add --renormalize + git commit -m "Apply CRLF line ending rules"
+# per ricontrollare la normalizzazione occorre applicare il comando: git ls-files --eol
+# SINTESI : applicare la normalizzazione:
+#			1) modifica il file					        = .gitattributes
+#			2) attiva la normalizzaione			     = git add --renormalize c:\CASA\LINGUAGGI\RUST\
+#			3) memorizzo il file                     = git commit -m "Update .gitattributes to enforce CRLF endings"
+#        4) controllo la normalizzazione          = git ls-files --eol
+#        5) PUOI UTILIZZARE IL COMANDO UNICO:     = git add --renormalize . &  git commit -m "Update .gitattributes to enforce CRLF endings" & git ls-files --eol
+
+
+# Evita di toccare i file binari
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.gz   binary
+*.7z   binary
+*.exe  binary
+*.dll  binary
+*.so   binary
+*.class binary
+
+# File di configurazione IDE
+*.iml text eol=crlf
+*.sublime-project text eol=crlf
+*.sublime-workspace text eol=crlf
+
+# Script Windows
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Documentazione
+*.md text eol=crlf
+*.txt text eol=crlf
+*.rst text eol=crlf
+
+# Sorgenti
+*.java text eol=crlf
+*.js   text eol=crlf
+*.ts   text eol=crlf
+*.html text eol=crlf
+*.css  text eol=crlf
+*.xml  text eol=crlf
+*.json text eol=crlf

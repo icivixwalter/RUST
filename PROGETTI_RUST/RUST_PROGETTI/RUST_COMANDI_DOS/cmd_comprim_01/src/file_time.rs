@@ -55,12 +55,14 @@ impl FileTime {
     }
 
     // Funzione helper per ottenere `SystemTime` trasformato in `DateTime<Utc>`
+    //2025.08.17_@modifica01_@MESE@DI@MODIFICA_(Restuisco il mese in forma di numero di modifica del file)
     fn get_modification_time(&self) -> Option<DateTime<Utc>> {
-        // Tenta prima di ottenere la data di creazione, altrimenti usa quella di modifica
-        self.metadati_file.created().ok()
-           .or_else(|| self.metadati_file.modified().ok())
+        // Usa esclusivamente la data di modifica del file.
+        self.metadati_file.modified().ok()
            .map(Into::into) // Converte `SystemTime` in `DateTime<Utc>`
     }
+
+
 
     // Metodo per ottenere l'anno di modifica/creazione del file
     pub fn get_anno(&self) -> i32 {

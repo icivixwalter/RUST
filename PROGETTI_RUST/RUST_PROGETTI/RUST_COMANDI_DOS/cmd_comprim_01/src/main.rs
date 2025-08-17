@@ -46,6 +46,16 @@
 
 
 
+================================================================================
+le modifiche effettuate:
+
+2025.08.17_@modifica01_@MESE@DI@MODIFICA_(Restuisco il mese in forma di numero di modifica del file)
+
+
+================================================================================
+
+
+
 [main]
  └─ Avvio applicazione
     ├─ [struct Argomenti]
@@ -185,7 +195,7 @@ impl ComprimiFile {
                     let file_metadata = dir_entry.metadata()?;
                     let istanza_file_time = FileTime::new(file_metadata);
 
-                    // Ottiene anno e mese di creazione/modifica
+                    // Ottiene anno e mese di creazione/modifica @dal file_time.rs
                     let (anno, mese) = istanza_file_time.get_anno_mese();
 
                     // *** MODIFICA_03: Debug per ogni file trovato ***

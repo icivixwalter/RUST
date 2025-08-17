@@ -28,12 +28,24 @@
 	"buffers":
 	[
 		{
-			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiArrivo/log.txt",
+			"file": "/c/CASA/LINGUAGGI/RUST/.gitattributes",
 			"settings":
 			{
-				"buffer_size": 125,
-				"line_ending": "Unix"
-			}
+				"buffer_size": 1625,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"paste",
+					null,
+					"AQAAAGMCAAAAAAAAegIAAAAAAAAeAAAAYzpcQ2FzYVxMSU5HVUFHR0lcU1VCTElNRVRFWFRc",
+					"AQAAAAAAAAABAAAAYwIAAAAAAACBAgAAAAAAAP///////+9/"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -271,28 +283,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiArrivo/log.txt",
+					"file": "/c/CASA/LINGUAGGI/RUST/.gitattributes",
 					"selected": true,
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 125,
+						"buffer_size": 1625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								589,
+								634
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Git Formats/Git Attributes.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 56.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

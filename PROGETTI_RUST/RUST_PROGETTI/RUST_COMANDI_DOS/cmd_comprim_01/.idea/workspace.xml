@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafd3093-5687-448f-a265-0ae456704124" name="Changes" comment="per ora funziona ma  inserisce in un solo file.zip dovrebbe creare 1 file zip per ogni file." />
+    <list default="true" id="aafd3093-5687-448f-a265-0ae456704124" name="Changes" comment="aggiunto Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,34 +45,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cargo.Run rust_comprimi_mese.executor": "Run",
-    "Cargo.Test comprimi_cartella_test.executor": "Run",
-    "Cargo.Test file_time::tests.executor": "Run",
-    "Cargo.Test file_time::tests::test_anno_file.executor": "Debug",
-    "Cargo.Test file_time::tests::test_get_anno.executor": "Run",
-    "Cargo.Test file_time::tests::test_get_anno_mese.executor": "Run",
-    "Cargo.Test file_time::tests::test_get_mese.executor": "Run",
-    "Cargo.Test file_time::tests::test_mese_file.executor": "Run",
-    "Cargo.Test main::tests.executor": "Run",
-    "Cargo.Test tests::comprimi_rar_test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "ml.llm.LLMProjectConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cargo.Run rust_comprimi_mese.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test comprimi_cartella_test.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test file_time::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test file_time::tests::test_anno_file.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test file_time::tests::test_get_anno.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test file_time::tests::test_get_anno_mese.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test file_time::tests::test_get_mese.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test file_time::tests::test_mese_file.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test main::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::comprimi_rar_test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMProjectConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Cargo.Run rust_comprimi_mese">
     <configuration name="Run rust_comprimi_mese" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="dev" />
@@ -219,6 +219,7 @@
       <updated>1755339449522</updated>
       <workItem from="1755339451070" duration="19202000" />
       <workItem from="1755369482406" duration="138000" />
+      <workItem from="1755444249087" duration="3544000" />
     </task>
     <task id="LOCAL-00001" summary="ho inserito le nuove path partenza ed arrivo + i file da visionare nella parth di partenza">
       <option name="closed" value="true" />
@@ -276,7 +277,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755369567560</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2025.08.17_@modifica01_@MESE@DI@MODIFICA_(Restuisco il mese in forma di numero di modifica del file)">
+      <option name="closed" value="true" />
+      <created>1755448627783</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755448627783</updated>
+    </task>
+    <task id="LOCAL-00009" summary="aggiunto Project">
+      <option name="closed" value="true" />
+      <created>1755449809901</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1755449809901</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +316,9 @@
     <MESSAGE value="sistemato i test in main" />
     <MESSAGE value="creato 2 test" />
     <MESSAGE value="per ora funziona ma  inserisce in un solo file.zip dovrebbe creare 1 file zip per ogni file." />
-    <option name="LAST_COMMIT_MESSAGE" value="per ora funziona ma  inserisce in un solo file.zip dovrebbe creare 1 file zip per ogni file." />
+    <MESSAGE value="2025.08.17_@modifica01_@MESE@DI@MODIFICA_(Restuisco il mese in forma di numero di modifica del file)" />
+    <MESSAGE value="aggiunto Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunto Project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

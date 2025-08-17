@@ -1,1 +1,4 @@
 Scansione della directory: c:\Casa\LINGUAGGI\RUST\PROGETTI_RUST\RUST_PROGETTI\RUST_COMANDI_DOS\cmd_comprim_01\PathDiPartenza
+File processato: "c:\\Casa\\LINGUAGGI\\RUST\\PROGETTI_RUST\\RUST_PROGETTI\\RUST_COMANDI_DOS\\cmd_comprim_01\\PathDiPartenza\\000 LE TORRI - Relazione Rendiconto Gestione 2024 Rev. 1_signed.pdf"
+File processato: "c:\\Casa\\LINGUAGGI\\RUST\\PROGETTI_RUST\\RUST_PROGETTI\\RUST_COMANDI_DOS\\cmd_comprim_01\\PathDiPartenza\\2023_10_01_BOX_Fattura_01_22_(122,00).pdf"
+File processato: "c:\\Casa\\LINGUAGGI\\RUST\\PROGETTI_RUST\\RUST_PROGETTI\\RUST_COMANDI_DOS\\cmd_comprim_01\\PathDiPartenza\\COMANDI_DOS_TUTTI.md"
