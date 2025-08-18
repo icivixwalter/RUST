@@ -28,22 +28,32 @@
 	"buffers":
 	[
 		{
-			"file": "/c/CASA/LINGUAGGI/RUST/.gitattributes",
+			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_PULL.BAT",
 			"settings":
 			{
-				"buffer_size": 1625,
-				"encoding": "UTF-8",
+				"buffer_size": 525,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\nstart https://github.com/icivixwalter/\n",
+			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_OpenGitHub.bat",
+			"file_size": 63,
+			"file_write_time": 133999810209013296,
+			"settings":
+			{
+				"buffer_size": 40,
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
-					6,
+					5,
 					1,
-					"paste",
+					"right_delete",
 					null,
-					"AQAAAGMCAAAAAAAAegIAAAAAAAAeAAAAYzpcQ2FzYVxMSU5HVUFHR0lcU1VCTElNRVRFWFRc",
-					"AQAAAAAAAAABAAAAYwIAAAAAAACBAgAAAAAAAP///////+9/"
+					"AQAAACcAAAAAAAAAJwAAAAAAAAAVAAAAUlVTVF9QVVJPX0NPTU1BTkRfRE9T",
+					"AQAAAAAAAAABAAAAJwAAAAAAAAA8AAAAAAAAAP///////+9/"
 				]
 			]
 		}
@@ -139,19 +149,12 @@
 	"expanded_folders":
 	[
 		"/c/CASA/LINGUAGGI/RUST",
-		"/c/CASA/LINGUAGGI/RUST/GIT_BAT",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI",
-		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS",
-		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01",
-		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiArrivo",
-		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/cmd_comprim_01/PathDiPartenza"
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS"
 	],
 	"file_history":
 	[
-		"/C/CASA/LINGUAGGI/SUBLIMETEXT/README_COMANDI_VARI.md",
-		"/c/CASA/LINGUAGGI/RUST/GIT_BAT/git_OpenGitHub.bat",
-		"/c/CASA/LINGUAGGI/RUST/GIT_BAT/git_Repository.txt",
 		"/c/CASA/LINGUAGGI/RUST/README.md",
 		"/C/CASA/LINGUAGGI/RUST_02/RUST_TUTORIAL/RUST_TUTORIAL_CARLO_MILANESI.MD",
 		"/C/CASA/LINGUAGGI/RUST_02/RUST_TUTORIAL/RUST_TUTORIAL_COMPLETO.MD",
@@ -283,28 +286,57 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/c/CASA/LINGUAGGI/RUST/.gitattributes",
-					"selected": true,
+					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_PULL.BAT",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1625,
+						"buffer_size": 525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								589,
-								634
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Git Formats/Git Attributes.sublime-syntax"
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 56.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_OpenGitHub.bat",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
