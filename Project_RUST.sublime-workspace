@@ -28,16 +28,35 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/RIASSUNTO_TONY_CHAN.md",
 			"settings":
 			{
 				"buffer_size": 85989,
 				"encoding": "UTF-8",
+=======
+			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_PULL.BAT",
+			"settings":
+			{
+				"buffer_size": 525,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\nstart https://github.com/icivixwalter/\n",
+			"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_OpenGitHub.bat",
+			"file_size": 63,
+			"file_write_time": 133999810209013296,
+			"settings":
+			{
+				"buffer_size": 40,
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 				[
+<<<<<<< HEAD
 					7,
 					1,
 					"insert",
@@ -335,9 +354,13 @@
 				],
 				[
 					111,
+=======
+					5,
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 					1,
-					"paste",
+					"right_delete",
 					null,
+<<<<<<< HEAD
 					"AQAAAEk+AQAAAAAAWj4BAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAAST4BAAAAAABJPgEAAAAAAAAAAAAAAPC/"
 				],
@@ -3552,6 +3575,10 @@
 					null,
 					"BgAAAKhPAQAAAAAAq08BAAAAAAAAAAAAVE8BAAAAAABXTwEAAAAAAAAAAACrTwEAAAAAALFPAQAAAAAAAwAAACAgIFRPAQAAAAAAWk8BAAAAAAADAAAAICAgrk8BAAAAAAC3TwEAAAAAAAYAAAAgICAgICBUTwEAAAAAAF1PAQAAAAAABgAAACAgICAgIA",
 					"AQAAAAAAAAABAAAAVE8BAAAAAADMTwEAAAAAAAAAAAAAAAAA"
+=======
+					"AQAAACcAAAAAAAAAJwAAAAAAAAAVAAAAUlVTVF9QVVJPX0NPTU1BTkRfRE9T",
+					"AQAAAAAAAAABAAAAJwAAAAAAAAA8AAAAAAAAAP///////+9/"
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 				]
 			]
 		}
@@ -3661,6 +3688,7 @@
 		"/c/CASA/LINGUAGGI/RUST",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST",
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI",
+<<<<<<< HEAD
 		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN"
 	],
 	"file_history":
@@ -3671,6 +3699,12 @@
 		"/C/CASA/LINGUAGGI/SUBLIMETEXT/README_COMANDI_VARI.md",
 		"/c/CASA/LINGUAGGI/RUST/GIT_BAT/git_OpenGitHub.bat",
 		"/c/CASA/LINGUAGGI/RUST/GIT_BAT/git_Repository.txt",
+=======
+		"/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS"
+	],
+	"file_history":
+	[
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 		"/c/CASA/LINGUAGGI/RUST/README.md",
 		"/C/CASA/LINGUAGGI/RUST_02/RUST_TUTORIAL/RUST_TUTORIAL_CARLO_MILANESI.MD",
 		"/C/CASA/LINGUAGGI/RUST_02/RUST_TUTORIAL/RUST_TUTORIAL_COMPLETO.MD",
@@ -3805,24 +3839,38 @@
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/TUTORIAL_TONY_CHAN/RIASSUNTO_TONY_CHAN.md",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 85989,
+=======
+					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_PULL.BAT",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 525,
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								85853,
 								85982
+=======
+								0,
+								0
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 							]
 						],
 						"settings":
 						{
+<<<<<<< HEAD
 							"mde.match_heading_hashes": false,
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
 							"tab_size": 3,
@@ -3830,6 +3878,42 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 33336.8,
+=======
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/c/CASA/LINGUAGGI/RUST/PROGETTI_RUST/RUST_PROGETTI/RUST_COMANDI_DOS/git_OpenGitHub.bat",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+>>>>>>> 20ab7e63b5818566ea1cbc64d58907a0069791a9
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
