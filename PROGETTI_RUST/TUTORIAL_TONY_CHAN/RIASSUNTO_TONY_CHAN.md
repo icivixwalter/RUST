@@ -8,17 +8,16 @@
  ### Introduzione
  
 
-   Sviluppato inizialmente da  Graydon Hoare e sponsorizzato  
-   da Mozzilla nato con l'obiettivo di combinare prestazioni elevate e  
-   controllo della memoria di C e C++ orientato alla prevenzione della 
+   Sviluppato inizialmente da  Graydon Hoare e sponsorizzato da Mozzilla nato con l'obiettivo di combinare   
+   prestazioni elevate e controllo della memoria di C e C++ orientato alla prevenzione della   
    sicurezza e degli errori tipo:  
-      data races
-      buffer overflows
-   Sponsorizzato da Mozzilla perche migliorava le prestazioni di Firefox-
-   Quali paradigmi di programmazione offre:
-      programmazione imperativa
-      programmazione funzionale
-      programmazione orientata agli oggetti
+      data races  
+      buffer overflows  
+   Sponsorizzato da Mozzilla perche migliorava le prestazioni di Firefox-   
+   Quali paradigmi di programmazione offre:  
+      programmazione imperativa  
+      programmazione funzionale  
+      programmazione orientata agli oggetti  
    
       concetto di ownership   = per la gestione
          sicura della memoria e l'assenza di errore di concorenza.
@@ -29,18 +28,18 @@
    #### Breve storia
    
    
-   Inizia del 2006 quando Graydon Hoare creo nel tempo libero questo linguaggio cercando di
-   risolvere i problemi di sicurezza di C e C++ progettato per offrire prestazioni di basso livello di C e C++ 
-   senza i problemi di memoria di
+   Inizia del 2006 quando Graydon Hoare creo nel tempo libero questo linguaggio cercando di  
+   risolvere i problemi di sicurezza di C e C++ progettato per offrire prestazioni di basso livello di C e C++   
+   senza i problemi di memoria di  
    
       buffer overflows
    
-      data races        = In ambito informatico, una data race (o corsa ai dati) è una condizione che si verifica 
-      quando più thread o processi accedono contemporaneamente a una risorsa condivisa (come una variabile), 
-      e almeno uno di questi accessi è una scrittura. Questo può portare a risultati inattesi, imprevedibili e, 
-      spesso, errati, poiché l'ordine in cui i thread accedono alla risorsa non è controllato.
+      data races        = In ambito informatico, una data race (o corsa ai dati) è una condizione che si verifica   
+      quando più thread o processi accedono contemporaneamente a una risorsa condivisa (come una variabile),   
+      e almeno uno di questi accessi è una scrittura. Questo può portare a risultati inattesi, imprevedibili e,  
+      spesso, errati, poiché l'ordine in cui i thread accedono alla risorsa non è controllato.  
    
-   Nel 2009 fu sponsorizzato da mozzilla per miglioare le prestazione di Firefox e nel 2010 fu creato il primo 
+   Nel 2009 fu sponsorizzato da mozzilla per miglioare le prestazione di Firefox e nel 2010 fu creato il primo   
    compilatore rustc scritto interamente in Rust.
    
    Innovativo è stato il sistema di "ownership = proprieta"
@@ -167,18 +166,15 @@
    
                            fn main() {
                                   let sum: i32 = (1..=5).sum();
-                                  println!("La somma è: {}", sum);
-                              }
-   
-                        Oppure con map e filter:
-                           fn main() {
-                               let squares: Vec<i32> = (1..=5)
+                                  println!(
+                                  quares: Vec<i32> = (1..=5)
                                    .map(|x| x * x)
                                    .filter(|x| x % 2 == 0)
                                    .collect();
    
                                println!("Quadrati pari: {:?}", squares);
                            }
+
    
                         Spiegazione:
    
@@ -550,7 +546,7 @@
             cioè è il compilatore che individua e traccia chi sta accedendo a cosa e per quanto tempo.
             inoltre estende la protezione anche alle operazioni concorrenti e cioè eseguire delle 
             operazioni in parellelo senza  preoccupazione di deallocare la memoria oppure che si
-            creano race conditions = dati lette mutato da altri.
+            creano race conditions = dati vengono modificati da altri mentre sono in lettura.
             La programmazione asincrona è sicura in quanto perche utilizza
                Un task asincrono è un'unità di lavoro che può sospendersi e riprendere più tardi, senza bloccare il thread.
                Ti permette di scrivere codice che fa "altro" mentre aspetta (es. attende dati dalla rete, un file, un timer…).
@@ -565,6 +561,7 @@
       la memorizzazione e la manipolazione dei dati.  
       Pag. 38 - Sia le COSTANTI che le VARIABILI sfruttano la memoria RAM e cessano al termine  
       delle'esecuzione salvo in cui sono salvata su dispositivi esterni.  
+
       Let = parola chiave di dichiarazione e di default immutabili salvo se necesario per cambiare valore occorre  
       la parola chiame: mut  
             es. immutabile
@@ -1371,68 +1368,247 @@
                 println!("Il valore è: {}", contenitore.ottenere()); 
             } 
 
- ### Macro **
+ ### MACRO
    DEFINIZIONE MACRO
 
-       Sono strumenti che permettono di scrivere codice che GENERA ALTRO CODICE DURANTE LA COMPILAZIONE.
-       Servono per ridurre le ripetizioni e a semplificare i pattern complessi.
-         Macro di Procedura
-            permettono di trasformare e generare codice durante la compilazione. Macro di procedura sono applicate per 
-             implementare comportamenti come macro #[Derive] = genera trait come Debug o Clone es. 
-               #[derive(Debug)] 
-                     struct Persona { 
-                         nome: String, 
-                         età: u32, 
-                     } 
-                      
-                     fn main() { 
-                         let p = Persona { 
-                             nome: String::from("Alice"), 
-                             età: 30, 
-                         }; 
-                         println!("{:?}", p); // Stampa la struttura con i suoi valori 
-                     } 
+   STRUMENTI CHE GENERANO ALTRO CODICE
+             Sono strumenti che permettono di scrivere codice che GENERA ALTRO CODICE DURANTE LA COMPILAZIONE.
+             Servono per ridurre le ripetizioni e a semplificare i pattern complessi.
+   MACRO DI PROCEDURA
+               permettono di trasformare e generare codice durante la compilazione. Macro di procedura sono applicate per
+                implementare comportamenti come macro #[Derive] = genera trait come Debug o Clone es.
+                  #[derive(Debug)]        //esempio di macro di procedura che implementazioni di trait
+                        struct Persona {
+                            nome: String,
+                            età: u32,
+                        }
 
-               Le macro di procedura POSSONO ESSERE DEFINITE usando delle librerie proc-macro per una manipolazione 
-               sofisticata del codice sorgente.
-               Le macro  di procedura creano istruzioni flessibili come una funzione che gestisce  piu tipi di dati, 
-               o pattern comuni, senza scrivere manualmente ogni variante;
+                        fn main() {
+                            let p = Persona {
+                                nome: String::from("Alice"),
+                                età: 30,
+                            };
+                            println!("{:?}", p); // Stampa la struttura con i suoi valori
+                        }
 
-                  macro_rules! saluta { 
-                      ($name:expr) => { 
-                          println!("Ciao, {}!", $name); 
-                      }; 
+   MACRO DEFINITE CON LE LIBRERIA PROC-MACRO
+                  Le macro di procedura POSSONO ESSERE DEFINITE usando delle librerie proc-macro per una manipolazione
+                  sofisticata del codice sorgente.
+                  Le macro  di procedura creano istruzioni flessibili come una funzione che gestisce  piu tipi di dati,
+                  o pattern comuni, senza scrivere manualmente ogni variante;
+
+                     macro_rules! saluta {
+                         ($name:expr) => {
+                             println!("Ciao, {}!", $name);
+                         };
+                     }
+                     fn main() {
+                        saluta!("Amico");
+                        }
+                     La macro saluta genera codice che utilizza println! per salutare l'argomento pasato
+
+   Macro di Dichiarazione tabella generale
+         +----------------+--------------------------------------------------------+------------------------------------------+
+         | Macro          | Utilizzo                                               | Esempio                                  |
+         +----------------+--------------------------------------------------------+------------------------------------------+
+         | println!       | Stampa un messaggio su console con formattazione       | println!("Ciao, {}!", "mondo");          |
+         | format!        | Crea una stringa formattata senza stamparla            | let s = format!("Il numero è: {}", 42);  |
+         | vec!           | Crea un vettore con valori predefiniti                 | let v = vec![1, 2, 3];                   |
+         | include_str!   | Include il contenuto di un file come stringa           | let testo = include_str!("file.txt");    |
+         | include_bytes! | Include un file come slice di byte (&[u8])             | let dati = include_bytes!("file.bin");   |
+         | dbg!           | Stampa il valore per debug con posizione del codice    | dbg!(x * 2); // [src/main.rs:10] 4 = 4   |
+         | panic!         | Termina il programma con messaggio di errore           | panic!("Errore irreversibile");          |
+         | assert!        | Verifica che una condizione sia vera                   | assert!(1 + 1 == 2);                     |
+         | assert_eq!     | Verifica che due valori siano uguali                   | assert_eq!(3 * 3, 9);                    |
+         | assert_ne!     | Verifica che due valori siano diversi                  | assert_ne!(3 * 3, 8);                    |
+         | todo!          | Segnaposto per codice non ancora implementato          | todo!("Da implementare");                |
+         | unimplemented! | Come todo!, indica codice previsto ma non implementato | unimplemented!("In costruzione");        |
+         | unreachable!   | Indica codice che non dovrebbe essere mai eseguito     | unreachable!("Non dovrebbe succedere");  |
+         | eprint!        | Stampa su stderr senza newline                         | eprint!("Errore:");                      |
+         | eprintln!      | Stampa su stderr con newline                           | eprintln!("Errore: {}", "file mancante");|
+         | write!         | Scrive formattato su un writer (es. file, buffer)      | write!(f, "ciao {}", nome)?;             |
+         | writeln!       | Come write! ma con newline finale                      | writeln!(f, "ciao {}", nome)?;           |
+         +----------------+--------------------------------------------------------+------------------------------------------+
+
+### Ownership e borrowing - pag 64
+         I  concetti  di  ownership  e  borrowing  sono  fondamentali  in  Rust  e  sono  alla  base della gestione
+         della memoria sicura e senza garbage collector
+
+   Ownership
+      PAG 65 si riferisce alla gestione della memoria, ogni variabile è proprietaria del valore assegnato. Quando la variabile
+      esce dal suo scope la memoria viene liberata senza necessaita di liberare la memoria manualmente ed evitando i
+      dangling pointers = ossia i puntantori pendenti.
+
+
+               fn main() {
+                   let s = String::from("Ciao");
+                   println!("{}", s); // La variabile `s` possiede la stringa "Ciao"
+               } // Qui `s` esce dallo scope e la memoria viene rilasciata
+
+         APSPETTO CRITICO OWNERSHIP
+            si ha quando una variabile viene assegnata ad un'altra e dopo il trasferimentoù
+            del valore la variabile originale non puo essere utilizzata, in questo modo si
+            evitano accessi concorrenti non sicuri.
+
+               fn main() {
+                   let s1 = String::from("Ciao");
+                   let s2 = s1; // `s1` trasferisce la proprietà a `s2`
+                   // println!("{}", s1); // Questo causerebbe un errore perché `s1` non è più valido
+                   println!("{}", s2); // `s2` è ora il proprietario della stringa
+               }
+
+
+   Borrowing
+      prendi a prestito senza trasferire la proprieta di due tipi:
+
+         Prestito immutabile
+            puoi leggere il valore senza modificarlo
+         Prestito mutabile
+            puoi leggere il valore e modificarlo ma con la regola di un prestito mutabile
+            alla volta.
+
+               esempio prestito immutabile:
+
+                  fn stampa_lunghezza(s: &String) {
+                      println!("La lunghezza della stringa è: {}", s.len());
+                  }
+
+                  fn main() {
+                      let s1 = String::from("Ciao");
+                      stampa_lunghezza(&s1); // `s1` viene preso in prestito, ma non perde la proprietà
+                      println!("{}", s1); // `s1` può ancora essere usato qui
+                  }
+
+               esempio prestito mutabile:
+                  fn aggiungi_punto(s: &mut String) {
+                      s.push('.');
+                  }
+
+                  fn main() {
+                      let mut s1 = String::from("Ciao");
+                      aggiungi_punto(&mut s1); // `s1` viene preso in prestito mutabilmente
+                      println!("{}", s1); // `s1` è stato modificato e può essere usato di nuovo
+                  }
+
+
+
+         RACE  CONDITIONS
+           Una  delle  regole  essenziali  da  tenere  a  mente  è  che  non  possiamo  avere
+           contemporaneamente  un  prestito  mutabile  e  uno  o  più  prestiti  immutabili  sullo
+           stesso  dato.  Questo  vincolo  è  progettato  per  evitare  condizioni  di  competizione
+           (race  conditions)  e  garantire  che  i  dati  non  vengano  modificati  mentre  vengono
+           letti da altre parti del codice:
+
+                  fn modifica(s: &mut String) {
+                      s.push_str(", mondo!");
+                  }
+
+                  fn main() {
+                      let mut saluto = String::from("Ciao");
+
+
+                       // Prestito mutabile per modificare la stringa
+                         modifica(&mut saluto);
+
+                         // Una volta terminato il prestito mutabile, possiamo prendere un prestito immutabile
+                         let len = saluto.len(); // Prestito immutabile per leggere la lunghezza
+
+                         println!("Il saluto è: {} con lunghezza {}", saluto, len);
+                     }
+
+            Il  prestito  mutabile  a  modifica  permette  di  cambiare  il  valore  della  stringa.
+            Conclusa  questa  operazione,  possiamo  tranquillamente  prendere  un  prestito
+            immutabile per calcolare e stampare la lunghezza della stringa.
+
+                  fn main() {
+                      let mut saluto = String::from("Ciao");
+
+                      let r1 = &saluto; // Prestito immutabile
+                      let r2 = &saluto; // Un altro prestito immutabile
+                      let r3 = &mut saluto; // Errore: prestito mutabile mentre esistono prestiti immutabili
+
+                      println!("{}, {}, e {}", r1, r2, r3);
+                  }
+
+
+                     Questo codice genererà un errore perché abbiamo tentato di prendere un prestito 
+                     mutabile  r3  mentre  r1  e  r2  detengono  ancora  prestiti  immutabili.  Rust  non 
+                     permette questo tipo di conflitto, prevenendo potenziali bug.  
+         VERIFICA LIFETIME
+            è la durata del prestito limitata allo scope. Rust effettua la verifica di lifetime  
+            in modo automatico per garantire che i prestiti dei valori abbiamo durata limitata ed  
+            impedire la creazione di riferimenti pendenti deallocati.
+
+               fn main() { 
+                   let r; 
+                   { 
+                             let x = 5; 
+                          r = &x; // Errore: `x` non esiste più quando `r` viene utilizzato 
+                      } 
+                      println!("r: {}", r); // Tentativo di utilizzo di un riferimento non valido 
                   } 
-                  fn main() { 
-                     saluta!("Amico"); 
-                     } 
-                  La macro saluta genera codice che utilizza println! per salutare l'argomento pasato
+                   
+             In  questo  caso,  x  viene  deallocato  quando  esce  dallo  scope  interno,  quindi  il 
+             riferimento r sarebbe non valido. Rust previene questo tipo di errore, garantendo 
+             che i riferimenti rimangano sempre sicuri. 
+
+         SLICING 
+
+         predere la vista di una parte di un dato senza trasferirne la proprieta   
+
+               fn main() { 
+                   //Ad esempio, si può creare uno slice su una stringa:   
+                   let saluto = String::from("Ciao, mondo!"); 
+                   let ciao = &saluto[0..4]; // Slice immutabile sulla stringa 
+                   println!("Slice: {}", ciao); // Stampa "Ciao" 
+               } 
 
 
-         Macro di Dichiarazione
+               Lo  slice  ciao  non  possiede  i  dati,  ma  li  prende  in  prestito  in  modo  immutabile,  
+               rendendo possibile operare su parti dei dati senza trasferire la proprietà.   
+
+     CONCLUSIONE
+      Questi  concetti  di  ownership  e  borrowing  in  Rust  sono  essenziali  per  scrivere  
+      codice  sicuro  e  privo  di  errori  legati  alla  memoria,  fornendo  al  tempo  stesso  
+      flessibilità ed efficienza, bisogna comprendere queste regole per avere un controlo preciso  
+      e potente della gestione. 
+
+### I DATI - pag 68
+     RAPPRESENTATI IN BYTE
+         In Rust, come in molti altri linguaggi, i dati vengono rappresentati in byte, 
+         con ciascun byte composto da otto bit, che possono assumere valori da 0 a 255. Questi blocchi di 
+         dati possono essere aggregati  in unità più grandi come megabyte (un milione di  69 
+         byte)  o  gigabyte  (un  miliardo  di  byte),  quantità  di  memoria  oggi  ampiamente  
+         disponibili nei dispositivi moderni. 
+         Possono  rappresentare  numeri,  testo, immagini o qualsiasi altra informazione digitale.
+         In Rust, è fondamentale dichiarare in modo esplicito i tipi di dati delle variabili per garantire  la 
+         sicurezza e  la prevedibilità del comportamento del programma. Per esempio, 
+         sono inclusi tipi di dati come i32 per numeri interi a 32  bit, f64 per 
+         numeri in virgola mobile a 64 bit, e bool per valori booleani. 
+
+      IMMUTABILITA DI DEFAULT
+         per impostazione predefinita in rust una volta assegnato il valore alla variabile il  
+         valore non puo essere modificato. 
+         In questo modo si favorisce la sicurezza e la prevedibilita. Infatti se vi è la necessita di 
+         variare il valore di una variabile occorre dichiararla come mutabile con l'istruzione mut.
+         Ad esempio: let  mut x = 5; consente di cambiare il valore di x successivamente nel programma. 
+
+      DISTINZIONE ESSENZIALE TRA IMMUTABILI E MUTABILI
+          Un esempio pratico può essere la gestione di strutture come le String e le &str (stringhe immutabili).
+         Un oggetto  di  tipo  String  è  mutabile,  il  che  significa  che  possiamo  aggiungere, rimuovere  o  modificare 
+         i  caratteri  che  contiene.  Al  contrario,  una  stringa  di  tipo  &str è immutabile, quindi una volta 
+         creata non può essere modificata. 
+
+      DIFFERENZA TRA DATI IMMUTABILI E MUTABILI
+       I tipi di dati immutabili sono più sicuri in contesti concorrenti, poiché non possono essere modificati 
+       una volta creati, il che facilita la prevenzione di problemi comuni come le RACE CONDITION
+         chatgpt= caratteristiche principali di una race condition
+               Accesso concorrente: due o più thread lavorano sulla stessa risorsa.               
+               Almeno una scrittura: se tutti leggono soltanto, non si crea un problema. 
+
+         Rust  semplifica 
+         questa gestione attraverso strumenti come Mutex e Arc per la gestione sicura della 
+         mutabilità in contesti concorrenti.
 
 
-            tabella generale 
-               +-----------------+--------------------------------------------------------+-------------------------------------------+
-               | Macro           | Utilizzo                                               | Esempio                                   |
-               +-----------------+--------------------------------------------------------+-------------------------------------------+
-               | println!        | Stampa un messaggio su console con formattazione       | println!("Ciao, {}!", "mondo");           |
-               | format!         | Crea una stringa formattata senza stamparla            | let s = format!("Il numero è: {}", 42);   |
-               | vec!            | Crea un vettore con valori predefiniti                 | let v = vec![1, 2, 3];                    |
-               | include_str!    | Include il contenuto di un file come stringa           | let testo = include_str!("file.txt");     |
-               | include_bytes!  | Include un file come slice di byte (&[u8])             | let dati = include_bytes!("file.bin");    |
-               | dbg!            | Stampa il valore per debug con posizione del codice    | dbg!(x * 2); // [src/main.rs:10] 4 = 4    |
-               | panic!          | Termina il programma con messaggio di errore           | panic!("Errore irreversibile");           |
-               | assert!         | Verifica che una condizione sia vera                   | assert!(1 + 1 == 2);                      |
-               | assert_eq!      | Verifica che due valori siano uguali                   | assert_eq!(3 * 3, 9);                     |
-               | assert_ne!      | Verifica che due valori siano diversi                  | assert_ne!(3 * 3, 8);                     |
-               | todo!           | Segnaposto per codice non ancora implementato          | todo!("Da implementare");                 |
-               | unimplemented!  | Come todo!, indica codice previsto ma non implementato | unimplemented!("In costruzione");         |
-               | unreachable!    | Indica codice che non dovrebbe essere mai eseguito     | unreachable!("Non dovrebbe succedere");   |
-               | eprint!         | Stampa su stderr senza newline                         | eprint!("Errore:");                       |
-               | eprintln!       | Stampa su stderr con newline                           | eprintln!("Errore: {}", "file mancante"); |
-               | write!          | Scrive formattato su un writer (es. file, buffer)      | write!(f, "ciao {}", nome)?;              |
-               | writeln!        | Come write! ma con newline finale                      | writeln!(f, "ciao {}", nome)?;            |
-               +-----------------+---------------------------------------------------------+-------------------------------------------+
- 
 ## 2
