@@ -1,5 +1,5 @@
-@REM  cd.. devi posizionarti su git_desktop
-CD c:\CASA\LINGUAGGI\SUBLIMETEXT\
+@REM  cd.. devi posizionarti su git_rust
+CD c:\Casa\LINGUAGGI\RUST\
 
 dir 
 
@@ -10,7 +10,7 @@ ECHO pausa di 3 secondi per il controllo
 @TIMEOUT /T 3 /NOBREAK
 
 
-
+git pull
 git add .
 git commit -m "aggiornamento"
 
